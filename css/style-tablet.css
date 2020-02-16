@@ -97,6 +97,10 @@ a {
 	margin-right: 10px;
 }
 
+.fa-map-marker-alt {
+	margin-right: 14px !important;
+}
+
 .info-item p {
 	font-size: 14px;
 	display: inline;
