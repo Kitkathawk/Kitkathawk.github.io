@@ -9,18 +9,32 @@ body {
 
 .container {
 	background-color: #2b3030;
-	width: 70%;
+	width: 80%;
 	display: grid;
+	-ms-grid-template-columns: repeat(3, 1fr);
+	-ms-grid-auto-rows: 1fr;
+	-ms-grid-gap: 10px;
+	-ms-grid-template-areas:
+
+		"s s s"
+		"p n i"
+		"t t t"
+		"s s s"
+		"e e a"
+		"e e a"
+		"w w g"
+		"w w l"	
+	;
 }
 
 .spacer {
+	-ms-grid-area: s;
 	background-color: #048ba8;
 	color: #ffffff;
-	display: inline;
 }
 
 .spacer h2 {
-	font-family: 'Roboto bold';
+	font-family: 'Roboto-bold';
 	font-size: 30px;
 }
 
@@ -30,21 +44,34 @@ body {
 
 /* PROFILE */
 
-#profile-intro img {
+#profile-pic {
+	-ms-grid-area: p;
 	width: 186px;
 	height: 186px;
 	border-radius: 50%;
 	border: 4px solid #ffffff;
 }
 
-#profile-intro h1 {
-	font-family: 'Roboto bold';
+#profile-name{
+	-ms-grid-area: n;
+}
+
+#profile-name h1 {
+	font-family: 'Roboto-bold';
 	font-size: 35px;
 	color: #ffffff;
 }
 
-#profile-intro h3 {
+#profile-name h3 {
 	font-family: 'Roboto';
 	font-size: 20px;
 	color: #c2c4c4;
+}
+
+#profile-info {
+	-ms-grid-area: i;
+}
+
+#profile-pitch {
+	-ms-grid-area: t;
 }
