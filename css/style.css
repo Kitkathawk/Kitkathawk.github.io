@@ -23,8 +23,8 @@ ul {
 	width: 80%;
 	margin: 70px auto;
 	display: grid;
-	grid-template: 0.2fr 0.5fr / 25px 0.5fr 1fr 0.7fr 25px;
-	grid-auto-rows: 0.2fr;
+	grid-template: 0.1fr 0.3fr / 25px 0.3fr 0.7fr 0.5fr 25px;
+    grid-auto-rows: 0.1fr;
 	grid-gap: 15px;
 	align-items: center;
 }
@@ -186,14 +186,133 @@ nav {
 	padding: 15px 0;
 }
 
+.title h3 {
+	margin-left: 15px;
+}
+
 .education {
 	grid-column: 2 / 4;
 	background-color: #222626;
 	color: #ffffff;
 }
 
+.education .content {
+	margin-bottom: 20px;
+}
+
+.education .content .entry {
+	margin-bottom: 20px;
+}
+
 .experience {
 	grid-column: 2 / 4;
+	background-color: #222626;
+	color: #ffffff;
+}
+
+.entry-date p {
+	font-family: 'Robotothin';
+	color: #c2c4c4;
+	font-size: 17px;
+	margin: 15px 15px 5px;
+}
+
+.entry-title h4 {
+	font-size: 18px;
+	font-family: 'Robotobold';
+	color: #ffffff;
+	margin: 5px 15px 5px;
+}
+
+.entry-text p {
+	font-family: 'Robotobold';
+	font-size: 18px;
+	color: #048ba8;
+	margin: -3px 15px 5px;
+}
+
+.entry-description p {
+	font-family: 'Robotothin';
+	color: #c2c4c4;
+	font-size: 16px;
+	margin: 15px 15px 15px;
+}
+
+#smaller-text {
+	font-size: 16px;
+}
+
+.programming-skills {
+	grid-column: 4 / 5;
+	grid-row: 5 / 6;
+	align-self: start;
+	background-color: #222626;
+	color: #ffffff;
+}
+
+.percentage-bar {
+	margin: 23px;
+}
+
+.percentage-bar p {
+	font-family: 'Robotothin';
+	font-size: 14px;
+	color: #cccccc;
+	margin-bottom: 5px;
+}
+
+.percentage {
+	font-family: 'Roboto' !important;
+	text-align: right;
+    line-height: 30px;
+    margin-left: -10px;
+    color: #ffffff;
+}
+
+.bar {
+	background-color: #1a1e1e;
+	width: 230px;
+	height: 30px;
+}
+
+#html {
+	background-color: #1b7f7c;
+	width: 90%;
+	height: 30px;
+}
+
+#css {
+	background-color: #56afa8;
+	height: 30px;
+	width: 80%;
+}
+
+#js {
+	background-color: #22af4d;
+	height: 30px;
+	width: 50%;
+}
+
+#sql {
+	background-color: #b29c30;
+	height: 30px;
+	width: 70%;
+}
+
+#php {
+	background-color: #c14733;
+	height: 30px;
+	width: 40%;
+}
+
+.graphic-skills {
+	grid-column: 4 / 5;
+	background-color: #222626;
+	color: #ffffff;
+}
+
+.languages {
+	grid-column: 4 / 5;
 	background-color: #222626;
 	color: #ffffff;
 }
