@@ -259,8 +259,9 @@ nav {
 	background-color: #222626;
 }
 
-.percentage-bar {
-	margin: 23px;
+.programming-skills .content {
+	width: 80%;
+    margin: 0 auto;
 }
 
 .percentage-bar p {
@@ -322,6 +323,11 @@ nav {
 	background-color: #222626;
 	color: #ffffff;
 	align-self: start;
+}
+
+.software-apps {
+	width: 50%;
+    margin: 0 auto;
 }
 
 .label {
