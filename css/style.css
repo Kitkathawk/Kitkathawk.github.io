@@ -190,26 +190,6 @@ nav {
 	margin-left: 15px;
 }
 
-.education {
-	grid-column: 2 / 4;
-	background-color: #222626;
-	color: #ffffff;
-}
-
-.education .content {
-	margin-bottom: 20px;
-}
-
-.education .content .entry {
-	margin-bottom: 20px;
-}
-
-.experience {
-	grid-column: 2 / 4;
-	background-color: #222626;
-	color: #ffffff;
-}
-
 .entry-date p {
 	font-family: 'Robotothin';
 	color: #c2c4c4;
@@ -231,6 +211,36 @@ nav {
 	margin: -3px 15px 5px;
 }
 
+#smaller-text {
+	font-size: 16px;
+}
+
+
+/* EDUCATION */
+
+.education {
+	grid-column: 2 / 4;
+	background-color: #222626;
+	color: #ffffff;
+}
+
+.education .content {
+	margin-bottom: 20px;
+}
+
+.education .content .entry {
+	margin-bottom: 20px;
+}
+
+
+/* EXPERIENCE */
+
+.experience {
+	grid-column: 2 / 4;
+	background-color: #222626;
+	color: #ffffff;
+}
+
 .entry-description p {
 	font-family: 'Robotothin';
 	color: #c2c4c4;
@@ -238,16 +248,15 @@ nav {
 	margin: 15px 15px 15px;
 }
 
-#smaller-text {
-	font-size: 16px;
-}
+
+/* PROGRAMMING SKILLS */
 
 .programming-skills {
 	grid-column: 4 / 5;
 	grid-row: 5 / 6;
 	align-self: start;
-	background-color: #222626;
 	color: #ffffff;
+	background-color: #222626;
 }
 
 .percentage-bar {
@@ -305,14 +314,98 @@ nav {
 	width: 40%;
 }
 
+
+/* GRAPHIC SKILLS */
+
 .graphic-skills {
 	grid-column: 4 / 5;
 	background-color: #222626;
 	color: #ffffff;
+	align-self: start;
 }
+
+.label {
+	display: flex;
+}
+
+.label p {
+	font-family: 'Robotothin';
+	font-size: 12px;
+	color: #cccccc;
+	margin: 0 10px 10px;
+}
+
+#photoshop {
+	width: 15px;
+	height: 15px;
+	background-color: #1b7f7c;
+}
+
+#illustrator {
+	width: 15px;
+	height: 15px;
+	background-color: #56afa8;
+}
+
+#xd {
+	width: 15px;
+	height: 15px;
+	background-color: #22af4d;
+}
+
+#premiere {
+	width: 15px;
+	height: 15px;
+	background-color: #b29c30;
+}
+
+#ae{
+	width: 15px;
+	height: 15px;
+	background-color: #c14733;
+}
+
+.pie-center {
+	width: 130px;
+	height: 130px;
+	border-radius: 50%;
+	background-color: #222626;
+	position: absolute;
+	top: 35px;
+    left: 35px;
+	z-index: 5;
+}
+
+.pie-chart {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	position: relative;
+	margin: 30px auto;
+	background-image: conic-gradient(#b29c30 35%, #c14733 0 50%, #56afa8 0 75%, #1b7f7c 0 87.5%, #22af4d 0);
+}
+
+
+/* LANGUAGE SKILLS */
 
 .languages {
 	grid-column: 4 / 5;
 	background-color: #222626;
 	color: #ffffff;
+}
+
+.lang p {
+	font-family: 'Robotothin';
+	font-size: 14px;
+	color: #cccccc;
+	margin: 0 10px 10px;
+	display: inline;
+}
+
+.circle {
+	width: 35px;
+	height: 35px;
+	border-radius: 50%;
+	background-color: red;
+	display: inline-block;
 }
