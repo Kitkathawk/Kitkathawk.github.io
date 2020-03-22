@@ -171,7 +171,7 @@ nav {
 	color: #c2c4c4;
 	font-family: 'Robotothin';
 	align-self: start;
-	margin-top: 25px;
+	margin-top: 35px;
 }
 
 #profile-pitch p {
@@ -251,19 +251,20 @@ nav {
 	font-family: 'Robotothin';
 	color: #c2c4c4;
 	font-size: 16px;
-	margin: 15px 15px 15px;
+	margin: 15px;
+    width: 95%;
 }
 
 .experience .entry {
-	padding: 2px 0;
+	padding: 5px 0;
 }
 
-.experience .entry:nth-child(4) {
-	padding-bottom: 5px;
+.last {
+	margin-bottom: 4px;
 }
 
 hr {
-	border: 2px solid #2b3030;
+	border: 5px solid #2b3030;
 }
 
 
@@ -279,7 +280,7 @@ hr {
 }
 
 .programming-skills .content {
-	width: 80%;
+	width: 62%;
     margin: 33px auto 45px auto;
 }
 
@@ -350,8 +351,8 @@ hr {
 }
 
 .graphic-apps {
-	width: 53%;
-    margin: 20px auto 10px auto;
+	width: 40%;
+    margin: 20px auto;
 }
 
 .app-label {
@@ -425,12 +426,12 @@ hr {
 }
 
 .languages .content {
-	margin: 20px 0;
+	margin: 20px 0 24px 0;
 }
 
 .lang {
     margin: 10px auto;
-    width: 90%;
+    width: 68%;
 }
 
 .lang-code {
