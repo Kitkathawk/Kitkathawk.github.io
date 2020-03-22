@@ -23,7 +23,7 @@ ul {
 	width: 80%;
 	margin: 70px auto;
 	display: grid;
-	grid-template: 0.1fr 0.3fr / 25px 0.3fr 0.7fr 0.5fr 25px;
+	grid-template: repeat(6, 0.1fr) / 25px 0.3fr 0.7fr 0.5fr 25px;
     grid-auto-rows: 0.1fr;
 	grid-gap: 15px;
 	align-items: center;
@@ -68,6 +68,7 @@ nav {
 	-webkit-transition: all 0.2s ease;
 	transition: all 0.2s ease;
 	overflow: hidden;
+	cursor: pointer;
 }
 
 .menu-item:nth-child(1) {
@@ -93,6 +94,7 @@ nav {
 
 .menu-item a {
 	color: #ffffff;
+	display: block;
 }
 
 .menu-item i {
@@ -222,6 +224,7 @@ nav {
 	grid-column: 2 / 4;
 	background-color: #222626;
 	color: #ffffff;
+	margin-top: 20px;
 }
 
 .education .content {
@@ -237,8 +240,11 @@ nav {
 
 .experience {
 	grid-column: 2 / 4;
+	grid-row: 6 / 8;
 	background-color: #222626;
 	color: #ffffff;
+	align-self: start;
+	margin-bottom: 30px;
 }
 
 .entry-description p {
@@ -246,6 +252,18 @@ nav {
 	color: #c2c4c4;
 	font-size: 16px;
 	margin: 15px 15px 15px;
+}
+
+.experience .entry {
+	padding: 2px 0;
+}
+
+.experience .entry:nth-child(4) {
+	padding-bottom: 5px;
+}
+
+hr {
+	border: 2px solid #2b3030;
 }
 
 
@@ -257,11 +275,16 @@ nav {
 	align-self: start;
 	color: #ffffff;
 	background-color: #222626;
+	margin-top: 20px;
 }
 
 .programming-skills .content {
 	width: 80%;
-    margin: 0 auto;
+    margin: 33px auto 45px auto;
+}
+
+.percentage-bar {
+	margin: 15px 0;
 }
 
 .percentage-bar p {
@@ -320,71 +343,70 @@ nav {
 
 .graphic-skills {
 	grid-column: 4 / 5;
+	grid-row: 6 / 7;
 	background-color: #222626;
 	color: #ffffff;
 	align-self: start;
 }
 
-.software-apps {
-	width: 50%;
-    margin: 0 auto;
+.graphic-apps {
+	width: 53%;
+    margin: 20px auto 10px auto;
 }
 
-.label {
-	display: flex;
+.app-label {
+	margin-bottom: 5px;
 }
 
-.label p {
+.app-label div {
+	width: 15px;
+	height: 15px;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.app-label p {
 	font-family: 'Robotothin';
-	font-size: 12px;
+	font-size: 13px;
 	color: #cccccc;
 	margin: 0 10px 10px;
+	display: inline;
 }
 
 #photoshop {
-	width: 15px;
-	height: 15px;
 	background-color: #1b7f7c;
 }
 
 #illustrator {
-	width: 15px;
-	height: 15px;
 	background-color: #56afa8;
 }
 
 #xd {
-	width: 15px;
-	height: 15px;
 	background-color: #22af4d;
 }
 
 #premiere {
-	width: 15px;
-	height: 15px;
 	background-color: #b29c30;
 }
 
 #ae{
-	width: 15px;
-	height: 15px;
 	background-color: #c14733;
 }
 
 .pie-center {
-	width: 130px;
-	height: 130px;
+	width: 120px;
+	height: 120px;
 	border-radius: 50%;
 	background-color: #222626;
 	position: absolute;
-	top: 35px;
-    left: 35px;
+	top: 30px;
+    left: 30px;
 	z-index: 5;
 }
 
 .pie-chart {
-	width: 200px;
-	height: 200px;
+	width: 180px;
+	height: 180px;
 	border-radius: 50%;
 	position: relative;
 	margin: 30px auto;
@@ -396,22 +418,58 @@ nav {
 
 .languages {
 	grid-column: 4 / 5;
+	grid-row: 7 / 8;
 	background-color: #222626;
 	color: #ffffff;
+	margin-bottom: 30px;
+}
+
+.languages .content {
+	margin: 20px 0;
+}
+
+.lang {
+    margin: 10px auto;
+    width: 90%;
+}
+
+.lang-code {
+    width: 10%;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .lang p {
 	font-family: 'Robotothin';
 	font-size: 14px;
 	color: #cccccc;
-	margin: 0 10px 10px;
+}
+
+.evaluation {
 	display: inline;
+	vertical-align: middle;
 }
 
 .circle {
 	width: 35px;
 	height: 35px;
 	border-radius: 50%;
-	background-color: red;
+	background-color: #1a1e1e;
 	display: inline-block;
+}
+
+.por {
+	background-color: #1b7f7c;
+}
+
+.eng {
+	background-color: #56afa8;
+}
+
+.fra {
+	background-color: #22af4d;
+}
+
+.spa{
+	background-color: #b29c30;
 }
