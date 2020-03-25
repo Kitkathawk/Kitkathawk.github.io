@@ -18,6 +18,12 @@ ul {
 	list-style: none;
 }
 
+/*___________________MOBILE NAV */
+
+.mobile-nav {
+	background-color:orange;
+}
+
 .container {
 	background-color: #2b3030;
 	width: 80%;

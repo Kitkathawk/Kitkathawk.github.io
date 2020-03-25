@@ -492,3 +492,28 @@ hr {
 .spa{
 	background-color: #b29c30;
 }
+
+
+/* MOBILE NAV UPDATE */
+
+
+.mobile-nav-container {
+	background-color:orange;
+	height:80px;
+}
+
+.mobile-nav{
+	display:inline-block;
+	top:0px;
+	position:relative;
+}
+
+.mobile-menu-item{
+	display:inline;
+}
+
+.mobile-nav-ul{
+    list-style: none;
+    width: 300px;
+    /* position: relative; */
+}
