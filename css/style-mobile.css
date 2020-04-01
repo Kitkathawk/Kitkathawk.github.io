@@ -71,7 +71,7 @@ nav {
 	cursor: pointer;
 	display: inline-block;
 	border-radius: 50%;
-	margin: 15px;
+	margin: 5px;
 }
 
 .menu-item:nth-child(1) {
@@ -123,16 +123,18 @@ nav {
 	grid-row: 3 / 4;
 	margin-top: 10px;
 	text-align: center;
+	width: 95%;
+	margin: 0 auto;
 }
 
 #profile-name h1 {
 	font-family: 'Robotobold';
-	font-size: 35px;
+	font-size: 33px;
 	color: #ffffff;
 }
 
 #profile-name h3 {
-	font-size: 20px;
+	font-size: 18px;
 	color: #c2c4c4;
 	font-family: 'Robotothin';
 }
@@ -141,7 +143,7 @@ nav {
 	grid-column: 1 / -1;
 	grid-row: 4 / 5;
 	color: #ffffff;
-	width: 52%;
+	width: 83%;
 	margin: 20px auto;
 }
 
@@ -215,6 +217,7 @@ nav {
 	font-family: 'Robotobold';
 	color: #ffffff;
 	margin: 5px 15px 5px;
+	width: 95%;
 }
 
 .entry-text p {
@@ -222,6 +225,7 @@ nav {
 	font-size: 18px;
 	color: #048ba8;
 	margin: -3px 15px 5px;
+	width: 95%;
 }
 
 #smaller-text {
@@ -294,12 +298,13 @@ hr {
 }
 
 .programming-skills .content {
-	width: 53%;
+	width: 83%;
     margin: 33px auto 45px auto;
 }
 
 .percentage-bar {
-	margin: 15px 0;
+	margin: 15px auto;
+	width: 87%;
 }
 
 .percentage-bar p {
@@ -367,7 +372,7 @@ hr {
 }
 
 .graphic-apps {
-	width: 35%;
+	width: 55%;
     margin: 20px auto;
 }
 
@@ -448,7 +453,7 @@ hr {
 
 .lang {
     margin: 10px auto;
-    width: 60%;
+    width: 90%;
 }
 
 .lang-code {
@@ -492,6 +497,9 @@ hr {
 	background-color: #b29c30;
 }
 
+
+/* BACK TO TOP */
+
 #back-to-top {
 	background: #1b7f7c;
 	grid-column: 1 / -1;
@@ -501,7 +509,12 @@ hr {
 	width: 100%;
 }
 
+.arrow-container {
+	width: 9%;
+	margin: 10px auto;
+}
+
 .fa-arrow-up {
 	color: #ffffff;
-	font-size: 35px;
+	font-size: 30px;
 }

@@ -480,3 +480,20 @@ hr {
 .spa{
 	background-color: #b29c30;
 }
+
+
+/* BACK TO TOP */
+
+#back-to-top {
+	background: #1b7f7c;
+	grid-column: 1 / -1;
+	grid-row: 13 / 14;
+	display: none;
+	cursor: pointer;
+	width: 100%;
+}
+
+.fa-arrow-up {
+	color: #ffffff;
+	font-size: 35px;
+}
