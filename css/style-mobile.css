@@ -137,6 +137,7 @@ nav {
 	font-size: 18px;
 	color: #c2c4c4;
 	font-family: 'Robotothin';
+	margin-top: 5px;
 }
 
 #profile-info {
@@ -523,4 +524,94 @@ hr {
 .fa-arrow-up {
 	color: #ffffff;
 	font-size: 30px;
+}
+
+@media only screen and (max-width: 320px) and (orientation: portrait) {
+
+	ul {
+		width: 85%;
+	}
+	
+	#profile-name h1 {
+		font-size: 30px;
+	}
+
+	#profile-name h3 {
+		font-size: 17px;
+    	margin-top: 5px;
+	}
+
+	#profile-info {
+		margin: 10px auto;
+		position: relative;
+    	top: -10px;
+	}
+
+	.info-item i {
+		font-size: 16px;
+	}
+
+	.info-item p {
+		font-size: 14px;
+	}
+
+	.info-item a {
+		font-size: 14px;
+	}
+
+	.entry-title h4 {
+		width: 93%;
+	}
+
+	.entry-text p {
+		width: 93%;
+	}
+
+	.programming-skills .content {
+    	width: 100%;
+    }
+
+    .graphic-apps {
+    	width: 100%;
+    }
+
+    .lang {
+    	width: 88%;
+    }
+
+    #back-to-top {
+    	top: -34px;
+    	height: 55px;
+    }
+}
+
+@media only screen and (min-width: 411px) and (orientation: portrait) {
+	
+		ul {
+			width: 69%;
+		}
+
+		#profile-name h3 {
+			margin-top: 5px;
+		}
+
+		#profile-info {
+			width: 80%;
+		}
+
+		.programming-skills .content {
+			width: 75%;
+		}
+
+		.percentage-bar {
+			width: 80%;
+		}
+
+		.graphic-apps {
+			width: 80%;
+		}
+
+		.languages .content {
+			width: 90%;
+		}
 }
