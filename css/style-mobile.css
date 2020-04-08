@@ -538,7 +538,6 @@ hr {
 
 	#profile-name h3 {
 		font-size: 17px;
-    	margin-top: 5px;
 	}
 
 	#profile-info {
@@ -585,14 +584,38 @@ hr {
     }
 }
 
+@media only screen and (min-width: 375px) and (orientation: portrait) {
+	
+		ul {
+			width: 73%;
+		}
+
+		#profile-info {
+			width: 86%;
+		}
+
+		.programming-skills .content {
+			width: 77%;
+		}
+
+		.percentage-bar {
+			width: 88%;
+		}
+
+		.graphic-apps {
+			width: 86%;
+		}
+
+		.lang {
+			width: 80%;
+		}
+
+}
+
 @media only screen and (min-width: 411px) and (orientation: portrait) {
 	
 		ul {
 			width: 69%;
-		}
-
-		#profile-name h3 {
-			margin-top: 5px;
 		}
 
 		#profile-info {
