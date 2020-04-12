@@ -301,13 +301,13 @@ hr {
 }
 
 .programming-skills .content {
-	width: 90%;
+	width: 80%;
     margin: 33px auto 45px auto;
 }
 
 .percentage-bar {
 	margin: 15px auto;
-	width: 79%;
+	width: 80%;
 }
 
 .percentage-bar p {
@@ -327,7 +327,7 @@ hr {
 
 .bar {
 	background-color: #1a1e1e;
-	width: 230px;
+	width: 100%;
 	height: 30px;
 }
 
@@ -375,13 +375,13 @@ hr {
 }
 
 .graphic-apps {
-	width: 90%;
+	width: 46%;
     margin: 20px auto;
 }
 
 .app-label {
 	margin: 5px auto;
-    width: 51%;
+    width: 100%;
 }
 
 .app-label div {
@@ -476,6 +476,7 @@ hr {
 .evaluation {
 	display: inline;
 	vertical-align: middle;
+	margin-right: 10px;
 }
 
 .circle {
@@ -517,7 +518,7 @@ hr {
 }
 
 .arrow-container {
-	width: 9%;
+	width: 8%;
 	margin: 10px auto;
 }
 
@@ -526,7 +527,7 @@ hr {
 	font-size: 30px;
 }
 
-@media only screen and (max-width: 320px) and (orientation: portrait) {
+@media only screen and (max-width: 320px) {
 
 	ul {
 		width: 85%;
@@ -538,7 +539,6 @@ hr {
 
 	#profile-name h3 {
 		font-size: 17px;
-    	margin-top: 5px;
 	}
 
 	#profile-info {
@@ -567,51 +567,342 @@ hr {
 		width: 93%;
 	}
 
-	.programming-skills .content {
-    	width: 100%;
-    }
-
     .graphic-apps {
-    	width: 100%;
+    	width: 51%;
     }
 
     .lang {
-    	width: 88%;
+    	width: 87%;
     }
 
     #back-to-top {
     	top: -34px;
     	height: 55px;
     }
+
+    .fa-arrow-up{
+    	line-height: 35px;
+    }
 }
 
-@media only screen and (min-width: 411px) and (orientation: portrait) {
+@media only screen and (min-width: 375px) {
+	
+	ul {
+		width: 73%;
+	}
+
+	#profile-info {
+		width: 86%;
+	}
+
+	.graphic-apps {
+		width: 44%;
+	}
+
+	.lang {
+		width: 74%;
+	}
+
+	.arrow-container {
+    	width: 7%;
+    }
+}
+
+@media only screen and (min-width: 411px) {
 	
 		ul {
-			width: 69%;
-		}
-
-		#profile-name h3 {
-			margin-top: 5px;
+			width: 67%;
 		}
 
 		#profile-info {
 			width: 80%;
 		}
 
-		.programming-skills .content {
-			width: 75%;
+		.graphic-apps {
+			width: 40%;
 		}
 
-		.percentage-bar {
-			width: 80%;
+		.lang {
+			width: 68%;
+		}
+
+		.arrow-container {
+    		width: 9%;;
+    	}
+}
+
+@media only screen and (min-width: 568px) {
+	
+		ul {
+			width: 61%;
+		}
+
+		.menu-item {
+			width: 45px;
+   			height: 45px;
+   			padding: 12px;
+   			margin: 7px;
+		}
+
+		.menu-item i {
+			font-size: 40px;
+    		line-height: 45px;
+		}
+
+		#profile-info {
+			width: 57%;
+		}
+
+		.bar {
+			height: 35px
+		}
+
+		#html {
+			height: 35px;
+		}
+
+		#css {
+			height: 35px;
+		}
+
+		#js {
+			height: 35px;
+		}
+
+		#sql {
+			height: 35px;
+		}
+
+		#php {
+			height: 35px;
+		}
+
+		.percentage {
+			line-height: 35px;
 		}
 
 		.graphic-apps {
-			width: 80%;
+			width: 29%;
 		}
 
-		.languages .content {
-			width: 90%;
+		.lang {
+			width: 62%;
+		}
+
+		.circle {
+			width: 45px;
+    		height: 45px;
+    		margin: 0 1px;
+		}
+
+		.arrow-container {
+			width: 5%;
+		}
+}
+
+@media only screen and (min-width: 640px) {
+	
+		ul {
+			width: 54%;
+		}
+
+		.menu-item {
+			width: 45px;
+   			height: 45px;
+   			padding: 12px;
+   			margin: 7px;
+		}
+
+		.menu-item i {
+			font-size: 40px;
+    		line-height: 45px;
+		}
+
+		.info-item {
+			width: 69%;
+		}
+
+		.bar {
+			height: 35px
+		}
+
+		#html {
+			height: 35px;
+		}
+
+		#css {
+			height: 35px;
+		}
+
+		#js {
+			height: 35px;
+		}
+
+		#sql {
+			height: 35px;
+		}
+
+		#php {
+			height: 35px;
+		}
+
+		.percentage {
+			line-height: 35px;
+		}
+
+		.graphic-apps {
+			width: 26%;
+		}
+
+		.lang {
+			width: 55%;
+		}
+
+		.circle {
+			width: 45px;
+    		height: 45px;
+    		margin: 0 1px;
+		}
+
+		.arrow-container {
+			width: 4%;
+		}
+}
+
+@media only screen and (min-width: 667px) {
+	
+		ul {
+			width: 52%;
+		}
+
+		.menu-item {
+			width: 45px;
+   			height: 45px;
+   			padding: 12px;
+   			margin: 7px;
+		}
+
+		.menu-item i {
+			font-size: 40px;
+    		line-height: 45px;
+		}
+
+		.info-item {
+			width: 66%;
+		}
+
+		.bar {
+			height: 35px
+		}
+
+		#html {
+			height: 35px;
+		}
+
+		#css {
+			height: 35px;
+		}
+
+		#js {
+			height: 35px;
+		}
+
+		#sql {
+			height: 35px;
+		}
+
+		#php {
+			height: 35px;
+		}
+
+		.percentage {
+			line-height: 35px;
+		}
+
+		.graphic-apps {
+			width: 25%;
+		}
+
+		.lang {
+			width: 53%;
+		}
+
+		.circle {
+			width: 45px;
+    		height: 45px;
+    		margin: 0 1px;
+		}
+
+		.arrow-container {
+			width: 4%;
+		}
+}
+
+@media only screen and (min-width: 736px) {
+	
+		ul {
+			width: 47%;
+		}
+
+		.menu-item {
+			width: 45px;
+   			height: 45px;
+   			padding: 12px;
+   			margin: 7px;
+		}
+
+		.menu-item i {
+			font-size: 40px;
+    		line-height: 45px;
+		}
+
+		.info-item {
+			width: 60%;
+		}
+
+		.bar {
+			height: 35px
+		}
+
+		#html {
+			height: 35px;
+		}
+
+		#css {
+			height: 35px;
+		}
+
+		#js {
+			height: 35px;
+		}
+
+		#sql {
+			height: 35px;
+		}
+
+		#php {
+			height: 35px;
+		}
+
+		.percentage {
+			line-height: 35px;
+		}
+
+		.graphic-apps {
+			width: 23%;
+		}
+
+		.lang {
+			width: 48%;
+		}
+
+		.circle {
+			width: 45px;
+    		height: 45px;
+    		margin: 0 1px;
+		}
+
+		.arrow-container {
+			width: 4%;
 		}
 }

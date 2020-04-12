@@ -474,3 +474,9 @@ hr {
 .spa{
 	background-color: #b29c30;
 }
+
+/* BACK TO TOP */
+
+#back-to-top {
+	display: none;
+}
