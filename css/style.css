@@ -87,11 +87,6 @@ nav {
 	background-color: #c14733;
 }
 
-.menu-item:hover {
-	filter: brightness(110%);
-	width: 40px;
-}
-
 .menu-item a {
 	color: #ffffff;
 	display: block;
@@ -474,6 +469,7 @@ hr {
 .spa{
 	background-color: #b29c30;
 }
+
 
 /* BACK TO TOP */
 

@@ -5,10 +5,6 @@
 	font-family: 'Roboto';
 }
 
-body {
-	background-color: #1a1e1e;
-}
-
 a {
 	color: #3fa9f5;
 	text-decoration: none;
@@ -529,4 +525,3 @@ hr {
 	color: #ffffff;
 	font-size: 30px;
 }
-
