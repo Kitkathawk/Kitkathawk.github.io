@@ -533,21 +533,112 @@ hr {
 }
 
 @media only screen and (min-width: 800px) {
+	
+	#profile-info {
+		width: 86%;
+	}
 
+	.programming-skills .content {
+		margin: 43px auto 60px auto;
+	}
+
+	.graphic-apps {
+		width: 82%;
+	}
+
+	.lang {
+		width: 73%;
+	}
+
+	#back-to-top {
+		left: 105px;
+	}
 }
 
 @media only screen and (min-width: 834px) {
 
+	#profile-info {
+		width: 82%;
+	}
+
+	.graphic-apps {
+		width: 78%;
+	}
+
+	.lang {
+		width: 69%;
+	}
+
+	#back-to-top {
+		left: 110px;
+	}
 }
 
 @media only screen and (min-width: 900px) {
 
+	#profile-info {
+		width: 76%;
+	}
+
+	.programming-skills .content {
+		margin: 40px auto 60px auto;
+	}
+
+	.percentage-bar {
+		margin: 15px auto;
+	}
+
+	.graphic-apps {
+		width: 72%;
+	}
+
+	.lang {
+		width: 64%;
+	}
+
+	#back-to-top {
+		left: 125px;
+	}
 }
 
 @media only screen and (min-width: 1024px) {
 
+	#profile-info {
+		width: 66%;
+	}
+
+	.programming-skills .content {
+		margin: 35px auto 43px auto;
+	}
+
+	.graphic-apps {
+		width: 62%;
+	}
+
+	.lang {
+		width: 55%;
+	}
+
+	#back-to-top {
+		left: 155px;
+	}
 }
 
 @media only screen and (min-width: 1112px) {
+	
+	#profile-info {
+		width: 60%;
+	}
 
+	.graphic-apps {
+		width: 57%;
+	}
+
+	.lang {
+		width: 51%;
+	}
+
+	#back-to-top {
+		left: 180px;
+	}
 }
