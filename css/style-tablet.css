@@ -394,11 +394,14 @@ hr {
 }
 
 .app-text {
+	display: inline-block;
+	width: 115px;
+}
+
+.app-text p {
 	font-family: 'Robotothin';
 	font-size: 13px;
 	color: #cccccc;
-	display: inline-block;
-	width: 115px;
 }
 
 #photoshop {
