@@ -376,28 +376,29 @@ hr {
 }
 
 .graphic-apps {
-	width: 86%;
+	width: 100%;
     margin: 20px auto;
 }
 
 .app-label {
-	margin: 5px auto;
-    width: 51%;
+	width: 140px;
+    margin: 0 auto 5px auto;
 }
 
-.app-label div {
+.app-box {
 	width: 15px;
 	height: 15px;
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 5px;
 }
 
-.app-label p {
+.app-text {
 	font-family: 'Robotothin';
 	font-size: 13px;
 	color: #cccccc;
-	margin: 0 10px 10px;
-	display: inline;
+	display: inline-block;
+	width: 115px;
 }
 
 #photoshop {
@@ -453,19 +454,19 @@ hr {
 }
 
 .languages .content {
-	margin: 62px auto 68px auto;
+	margin: 75px auto 80px auto;
 	width: 100%;
 }
 
 .lang {
-    margin: 30px auto;
-    width: 75%;
+    margin: 15px auto;
+    width: 255px;
 }
 
 .lang-code {
-    width: 10%;
+    width: 25px;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
 }
 
 .lang p {
@@ -478,12 +479,11 @@ hr {
 	vertical-align: middle;
 	display: inline;
 	margin: 5px auto;
-	width: 80%;
 }
 
 .circle {
-	width: 35px;
-	height: 35px;
+	width: 40px;
+	height: 40px;
 	border-radius: 50%;
 	background-color: #1a1e1e;
 	display: inline-block;
@@ -542,14 +542,6 @@ hr {
 		margin: 43px auto 60px auto;
 	}
 
-	.graphic-apps {
-		width: 82%;
-	}
-
-	.lang {
-		width: 73%;
-	}
-
 	#back-to-top {
 		left: 105px;
 	}
@@ -559,14 +551,6 @@ hr {
 
 	#profile-info {
 		width: 82%;
-	}
-
-	.graphic-apps {
-		width: 78%;
-	}
-
-	.lang {
-		width: 69%;
 	}
 
 	#back-to-top {
@@ -588,14 +572,6 @@ hr {
 		margin: 15px auto;
 	}
 
-	.graphic-apps {
-		width: 72%;
-	}
-
-	.lang {
-		width: 64%;
-	}
-
 	#back-to-top {
 		left: 125px;
 	}
@@ -611,14 +587,6 @@ hr {
 		margin: 35px auto 43px auto;
 	}
 
-	.graphic-apps {
-		width: 62%;
-	}
-
-	.lang {
-		width: 55%;
-	}
-
 	#back-to-top {
 		left: 155px;
 	}
@@ -628,14 +596,6 @@ hr {
 	
 	#profile-info {
 		width: 60%;
-	}
-
-	.graphic-apps {
-		width: 57%;
-	}
-
-	.lang {
-		width: 51%;
 	}
 
 	#back-to-top {

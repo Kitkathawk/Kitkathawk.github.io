@@ -375,28 +375,29 @@ hr {
 }
 
 .graphic-apps {
-	width: 46%;
+	width: 100%;
     margin: 20px auto;
 }
 
 .app-label {
-	margin: 5px auto;
-    width: 100%;
+	width: 140px;
+    margin: 0 auto 5px auto;
 }
 
-.app-label div {
+.app-box {
 	width: 15px;
 	height: 15px;
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 5px;
 }
 
-.app-label p {
+.app-text {
 	font-family: 'Robotothin';
 	font-size: 13px;
 	color: #cccccc;
-	margin: 0 10px 10px;
-	display: inline;
+	display: inline-block;
+	width: 115px;
 }
 
 #photoshop {
@@ -458,13 +459,13 @@ hr {
 
 .lang {
     margin: 10px auto;
-    width: 78%;
+    width: 230px;
 }
 
 .lang-code {
-    width: 10%;
+    width: 25px;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
 }
 
 .lang p {
@@ -476,7 +477,6 @@ hr {
 .evaluation {
 	display: inline;
 	vertical-align: middle;
-	margin-right: 10px;
 }
 
 .circle {
@@ -567,14 +567,6 @@ hr {
 		width: 93%;
 	}
 
-    .graphic-apps {
-    	width: 51%;
-    }
-
-    .lang {
-    	width: 87%;
-    }
-
     #back-to-top {
     	top: -34px;
     	height: 55px;
@@ -595,14 +587,6 @@ hr {
 		width: 86%;
 	}
 
-	.graphic-apps {
-		width: 44%;
-	}
-
-	.lang {
-		width: 74%;
-	}
-
 	.arrow-container {
     	width: 7%;
     }
@@ -616,14 +600,6 @@ hr {
 
 		#profile-info {
 			width: 80%;
-		}
-
-		.graphic-apps {
-			width: 40%;
-		}
-
-		.lang {
-			width: 68%;
 		}
 
 		.arrow-container {
@@ -681,12 +657,8 @@ hr {
 			line-height: 35px;
 		}
 
-		.graphic-apps {
-			width: 29%;
-		}
-
 		.lang {
-			width: 62%;
+			width: 290px;
 		}
 
 		.circle {
@@ -750,12 +722,8 @@ hr {
 			line-height: 35px;
 		}
 
-		.graphic-apps {
-			width: 26%;
-		}
-
 		.lang {
-			width: 55%;
+			width: 290px;
 		}
 
 		.circle {
@@ -819,12 +787,8 @@ hr {
 			line-height: 35px;
 		}
 
-		.graphic-apps {
-			width: 25%;
-		}
-
 		.lang {
-			width: 53%;
+			width: 290px;
 		}
 
 		.circle {
@@ -888,12 +852,8 @@ hr {
 			line-height: 35px;
 		}
 
-		.graphic-apps {
-			width: 23%;
-		}
-
 		.lang {
-			width: 48%;
+			width: 290px;
 		}
 
 		.circle {

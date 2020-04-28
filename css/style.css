@@ -346,27 +346,29 @@ hr {
 }
 
 .graphic-apps {
-	width: 40%;
+	width: 100%;
     margin: 20px auto;
 }
 
 .app-label {
-	margin-bottom: 5px;
+	width: 140px;
+    margin: 0 auto 5px auto;
 }
 
-.app-label div {
+.app-box {
 	width: 15px;
 	height: 15px;
 	display: inline-block;
 	vertical-align: middle;
+	margin-right: 5px;
 }
 
-.app-label p {
+.app-text {
 	font-family: 'Robotothin';
 	font-size: 13px;
 	color: #cccccc;
-	margin: 0 10px 10px;
-	display: inline;
+	display: inline-block;
+	width: 115px;
 }
 
 #photoshop {
@@ -426,13 +428,13 @@ hr {
 
 .lang {
     margin: 10px auto;
-    width: 68%;
+    width: 230px;
 }
 
 .lang-code {
-    width: 10%;
+    width: 25px;
     display: inline-block;
-    margin: 0 10px;
+    margin: 0 10px 0 0;
 }
 
 .lang p {
