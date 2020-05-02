@@ -10,12 +10,6 @@ a {
 	text-decoration: none;
 }
 
-ul {
-	list-style: none;
-	width: 36%;
-    margin: 10px 40px 10px;
-}
-
 .container {
 	background-color: #2b3030;
 	width: 100%;
@@ -59,6 +53,12 @@ nav {
     grid-column: 1 / -1;
 	grid-row: 9 / 10;
 	background: #111111;
+}
+
+ul {
+	list-style: none;
+	width: 275px;
+    margin: 10px 40px 10px;
 }
 
 .menu-item {
@@ -152,7 +152,7 @@ nav {
 .info-item {
 	padding-bottom: 15px;
 	margin: 0 auto;
-    width: 83%;
+    width: 255px;
 }
 
 .info-item i {
@@ -302,7 +302,7 @@ hr {
 }
 
 .programming-skills .content {
-	width: 80%;
+	width: 70%;
     margin: 50px auto 74px auto;
 }
 
@@ -318,18 +318,22 @@ hr {
 	margin-bottom: 5px;
 }
 
+.bar {
+	background-color: #1a1e1e;
+	width: 100%;
+	height: 30px;
+}
+
 .percentage {
+	height: 30px;
+}
+
+.percentage-text {
 	font-family: 'Roboto' !important;
 	text-align: right;
     line-height: 30px;
     margin-left: -10px;
     color: #ffffff;
-}
-
-.bar {
-	background-color: #1a1e1e;
-	width: 100%;
-	height: 30px;
 }
 
 #html {
@@ -340,25 +344,21 @@ hr {
 
 #css {
 	background-color: #56afa8;
-	height: 30px;
 	width: 80%;
 }
 
 #js {
 	background-color: #22af4d;
-	height: 30px;
 	width: 50%;
 }
 
 #sql {
 	background-color: #b29c30;
-	height: 30px;
 	width: 70%;
 }
 
 #php {
 	background-color: #c14733;
-	height: 30px;
 	width: 40%;
 }
 
@@ -521,9 +521,8 @@ hr {
     height: 35px;
 	border-radius: 50%;
 	padding: 10px;
-	position: relative;
-	top: 15px;
-	left: 100px;
+	justify-self: end;
+	margin: 15px 5px 0 0;
 }
 
 .arrow-container {
@@ -535,37 +534,17 @@ hr {
 	font-size: 35px;
 }
 
+
+/* MEDIA QUERIES */
+
 @media only screen and (min-width: 800px) {
-	
-	#profile-info {
-		width: 86%;
-	}
 
 	.programming-skills .content {
 		margin: 43px auto 60px auto;
 	}
-
-	#back-to-top {
-		left: 105px;
-	}
-}
-
-@media only screen and (min-width: 834px) {
-
-	#profile-info {
-		width: 82%;
-	}
-
-	#back-to-top {
-		left: 110px;
-	}
 }
 
 @media only screen and (min-width: 900px) {
-
-	#profile-info {
-		width: 76%;
-	}
 
 	.programming-skills .content {
 		margin: 40px auto 60px auto;
@@ -574,34 +553,11 @@ hr {
 	.percentage-bar {
 		margin: 15px auto;
 	}
-
-	#back-to-top {
-		left: 125px;
-	}
 }
 
 @media only screen and (min-width: 1024px) {
 
-	#profile-info {
-		width: 66%;
-	}
-
 	.programming-skills .content {
 		margin: 35px auto 43px auto;
-	}
-
-	#back-to-top {
-		left: 155px;
-	}
-}
-
-@media only screen and (min-width: 1112px) {
-	
-	#profile-info {
-		width: 60%;
-	}
-
-	#back-to-top {
-		left: 180px;
 	}
 }
