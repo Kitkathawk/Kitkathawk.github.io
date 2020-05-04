@@ -1,3 +1,5 @@
+/* GENERAL */
+
 * {
 	margin: 0;
 	padding: 0;
@@ -14,10 +16,6 @@ a {
 	text-decoration: none;
 }
 
-ul {
-	list-style: none;
-}
-
 .container {
 	background-color: #2b3030;
 	width: 80%;
@@ -28,6 +26,9 @@ ul {
 	grid-gap: 15px;
 	align-items: center;
 }
+
+
+/* DIVIDERS */
 
 .spacer {
 	grid-column: 1 / -1;
@@ -58,6 +59,10 @@ nav {
     width: 70px;
     left: 25px;
     top: -130px;
+}
+
+ul {
+	list-style: none;
 }
 
 .menu-item {

@@ -1,3 +1,5 @@
+/* SIDE MENU HOVER */
+
 .menu-item:hover {
 	filter: brightness(110%);
 	width: 40px;
