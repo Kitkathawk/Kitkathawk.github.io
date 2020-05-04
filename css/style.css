@@ -483,3 +483,20 @@ hr {
 #back-to-top {
 	display: none;
 }
+
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 1200px) and (max-width: 1308px) {
+
+	.languages .content {
+		margin: 40px 0 42px 0;;
+	}
+}
+
+@media only screen and (min-width: 1309px) and (max-width: 1342px) {
+
+	.languages .content {
+		margin: 30px 0 32px 0;
+	}
+}
