@@ -506,7 +506,7 @@ hr {
 	}
 }
 
-@media only screen and (min-width: 1980px) {
+@media only screen and (min-width: 1920px) {
 
 	.last {
 	    margin-bottom: 9px;
@@ -514,5 +514,12 @@ hr {
            
 	.languages .content {
 		margin: 15px 0 15px 0;
+	}
+}
+
+@media only screen and (min-width: 2560px) {
+
+	hr {
+    	border: 8px solid #2b3030;
 	}
 }
