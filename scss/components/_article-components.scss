@@ -1,0 +1,66 @@
+.title {
+
+	background-color: map-get($background-colors, article-header);
+	color: map-get($colors, secondary);
+	padding: 15px 0;
+
+		h3 {
+			margin-left: 15px;
+		}
+}
+
+
+.entry {
+
+	font-family: map-get($font-family, bold);
+	font-size: 18px;
+	
+		&__date {
+
+			p {
+				font-family: map-get($font-family, thin);
+				color: map-get($colors, primary);
+				font-size: 17px;
+				margin: 15px 15px 5px;
+			}	
+		}
+
+		&__title {
+
+			h4 {
+
+				color: map-get($colors, secondary);
+				margin: 5px 15px 5px;	
+
+			}
+
+		}
+
+		&__text {
+
+			p {
+				
+				color: map-get($colors, highlight);
+				margin: -3px 15px 5px;
+			}
+
+			#smaller-text {
+
+				font-size: 16px;
+
+			}
+		}
+
+		&__description {
+
+			p {
+
+				font-family: map-get($font-family, thin);
+				color: map-get($colors, primary);
+				font-size: 16px;
+				margin: 15px;
+    			width: 95%;
+
+			}	
+		}
+}

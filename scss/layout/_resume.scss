@@ -1,0 +1,330 @@
+/* EDUCATION */
+
+.education {
+
+	grid-column: 2 / 4;
+	background-color: map-get($background-colors, article);
+	color: map-get($colors, secondary);
+	margin-top: 20px;
+
+		.content {
+
+			margin-bottom: 20px;
+
+				.entry {
+
+					margin-bottom: 20px;
+
+				}
+
+		}
+}
+
+
+
+/* EXPERIENCE */
+
+.experience {
+
+	grid-column: 2 / 4;
+	grid-row: 6 / 8;
+	background-color: map-get($background-colors, article);
+	color: map-get($colors, secondary);
+	align-self: start;
+	margin-bottom: 30px;
+
+		.entry {
+
+			padding: 5px 0;
+
+		}
+
+		hr {
+
+			border: 5px solid map-get($background-colors, container);
+
+		}
+
+		.last {
+
+			margin-bottom: 4px;
+
+		}
+}
+
+
+
+/* PROGRAMMING SKILLS */
+
+.programming-skills {
+
+	grid-column: 4 / 5;
+	grid-row: 5 / 6;
+	align-self: start;
+	color: map-get($colors, secondary);
+	background-color: map-get($background-colors, article);
+	margin-top: 20px;
+
+		.content {
+
+			width: 70%;
+    		margin: 33px auto 45px auto;
+
+    			.bar-graph {
+
+    				height: 30px;
+					margin: 15px 0;
+
+						p {
+
+							font-family: map-get($font-family, thin);
+							font-size: 14px;
+							color: map-get($colors, label);
+							margin-bottom: 5px;
+
+						}
+
+					&__outline {
+
+						background-color: map-get($background-colors, body);
+						width: 100%;
+
+							p {
+
+								font-family: map-get($font-family, regular) !important;
+								text-align: right;
+    							line-height: 30px;
+    							margin-left: -10px;
+    							color: map-get($colors, secondary);
+
+							}
+
+					}
+
+					&--html {
+
+						background-color: map-get($background-colors, graph1);
+						width: 90%;
+
+					}
+
+					&--css {
+					
+						background-color: map-get($background-colors, graph2);
+						width: 80%;
+
+					}
+
+					&--js {
+
+						background-color: map-get($background-colors, graph3);
+						width: 50%;
+					
+					}
+
+					&--sql {
+					
+						background-color: map-get($background-colors, graph4);
+						width: 70%;
+
+					}
+
+					&--php {
+
+						background-color: map-get($background-colors, graph5);
+						width: 40%;
+					
+					}
+
+				}	
+		}
+}
+
+
+
+/* GRAPHIC SKILLS */
+
+.graphic-skills {
+	
+	grid-column: 4 / 5;
+	grid-row: 6 / 7;
+	background-color: map-get($background-colors, article);
+	color: map-get($colors, secondary);
+	align-self: start;
+
+		.graphic-apps {
+
+			width: 100%;
+   			margin: 20px auto;
+
+   				&__label {
+
+   					width: 140px;
+    				margin: 0 auto 5px auto;
+
+   				}
+
+   				&__box {
+
+   					width: 15px;
+					height: 15px;
+					display: inline-block;
+					vertical-align: middle;
+					margin-right: 5px;
+
+						&--photoshop {
+
+							background-color: map-get($background-colors, graph1);
+
+						}
+
+						&--illustrator {
+						
+							background-color: map-get($background-colors, graph2);
+
+						}
+
+						&--xd {
+
+							background-color: map-get($background-colors, graph3);
+						
+						}
+
+						&--premiere {
+
+							background-color: map-get($background-colors, graph4);
+						
+						}
+
+						&--ae {
+
+							background-color: map-get($background-colors, graph5);
+						
+						}
+
+   				}
+
+   				&__text {
+
+   					display: inline-block;
+					width: 115px;
+
+						p {
+
+							font-family: map-get($font-family, thin);
+							font-size: 13px;
+							color: map-get($colors, label);
+
+						}
+
+   				}
+
+		}
+
+		.pie-chart {
+
+			width: 180px;
+			height: 180px;
+			border-radius: 50%;
+			position: relative;
+			margin: 30px auto;
+			background-image: conic-gradient(#b29c30 35%, #c14733 0 50%, #56afa8 0 75%, #1b7f7c 0 87.5%, #22af4d 0);
+
+				&__center {
+
+					width: 120px;
+					height: 120px;
+					border-radius: 50%;
+					background-color: map-get($background-colors, article);
+					position: absolute;
+					top: 30px;
+				    left: 30px;
+					z-index: 5;	
+
+				}
+
+		}
+}
+
+
+
+/* LANGUAGE SKILLS */
+
+.languages {
+
+	grid-column: 4 / 5;
+	grid-row: 7 / 8;
+	background-color: map-get($background-colors, article);
+	color: map-get($colors, secondary);
+	margin-bottom: 30px;
+
+		.content {
+
+			margin: 20px 0 24px 0;
+
+				.lang {
+
+					margin: 10px auto;
+    				width: 230px;
+
+						&__code {
+
+							width: 25px;
+						    display: inline-block;
+						    margin: 0 10px 0 0;
+
+						    	p {
+
+						    		font-family: 'Robotothin';
+									font-size: 14px;
+									color: #cccccc;
+
+						    	}
+
+						}
+
+						&__evaluation {
+
+							display: inline;
+							vertical-align: middle;
+
+						}
+
+						&__circle {
+
+							width: 35px;
+							height: 35px;
+							border-radius: 50%;
+							background-color: map-get($background-colors, body);
+							display: inline-block;
+						
+								&--por {
+
+									background-color: map-get($background-colors, graph1);
+
+								}
+
+								&--eng {
+
+									background-color: map-get($background-colors, graph2);
+						
+								}
+
+								&--fra {
+
+									background-color: map-get($background-colors, graph3);
+						
+								}
+
+								&--spa {
+
+									background-color: map-get($background-colors, graph4);
+						
+								}
+
+						}
+
+				}
+
+		}
+}
