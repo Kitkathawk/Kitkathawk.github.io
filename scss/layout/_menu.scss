@@ -1,0 +1,49 @@
+/* MENU */
+
+menu {
+	position: relative;
+    width: 70px;
+    left: 25px;
+    top: -130px;
+
+    	ul {
+			list-style: none;
+		}
+
+		&__item {
+				width: 35px;
+				margin-bottom: 10px;
+				padding: 10px;
+				text-align: center;
+				-webkit-transition: all 0.2s ease;
+				transition: all 0.2s ease;
+				overflow: hidden;
+				cursor: pointer;
+
+					a {
+						color: map-get($colors, secondary);
+						display: block;
+					}
+
+					i {
+						font-size: 35px;
+						color: map-get($colors, secondary);
+					}
+
+					&:nth-child(1) {
+						background-color: map-get($background-colors, graph1);
+					}
+
+					&:nth-child(2) {
+						background-color: map-get($background-colors, linkedin);
+					}
+
+					&:nth-child(3) {
+						background-color: map-get($background-colors, graph4);
+					}
+
+					&:nth-child(4) {
+						background-color: map-get($background-colors, graph5);
+					}
+			}
+}

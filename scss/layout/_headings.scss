@@ -1,0 +1,33 @@
+/* HEADINGS */
+
+.spacer {
+	grid-column: 1 / -1;
+	background-color: map-get($background-colors, header);
+	color: map-get($colors, secondary);
+	padding: 15px 0;
+	align-self: start;
+
+		i {
+			font-size: 40px;
+			margin: 0 20px 0 25px;
+		}
+
+		h2 {
+			font-family: map-get($font-family, bold);
+			font-size: 30px;
+			display: inline;
+			vertical-align: text-bottom;
+		}
+
+		&--profile {
+			grid-row: 1 / 2;
+		}
+
+		&--resume {
+			grid-row: 5 / 6;
+		}
+
+}	
+
+
+

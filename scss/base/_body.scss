@@ -1,0 +1,10 @@
+/* GENERAL */
+
+body {
+	background-color: map-get($background-colors, body);
+}
+
+a {
+	color: map-get($colors, link);
+	text-decoration: none;
+}
