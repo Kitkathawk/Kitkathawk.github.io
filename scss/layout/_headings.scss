@@ -25,9 +25,20 @@
 
 		&--resume {
 			grid-row: 5 / 6;
+			
+				@include mobile {
+
+					grid-row: 6 / 7;
+					align-self: center;
+
+				}
+
+				@include tablet {
+
+					align-self: center;
+
+				}
 		}
 
 }	
-
-
 

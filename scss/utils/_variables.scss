@@ -1,3 +1,5 @@
+//MAPS
+
 $colors: (
 	primary: #c2c4c4,
 	secondary: #ffffff,
@@ -5,7 +7,6 @@ $colors: (
 	label: #cccccc,
 	link: #3fa9f5
 );
-
 
 $background-colors: (
 	body: #1a1e1e,
@@ -26,3 +27,28 @@ $font-family: (
 	thin: 'Robotothin',
 	bold: 'Robotobold'
 );
+
+$breakpoints: (
+	mobile: 320px,
+	tablet: 768px,
+	desktop: 1200px 
+) !default;
+
+
+//MIXINS
+
+@mixin mobile {
+	@media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, mobile) - 1) {
+
+		@content;
+
+	}
+}
+
+@mixin tablet {
+	@media screen and (min-width: map-get($breakpoints, tablet)) and (max-width: map-get($breakpoints, desktop) - 1) {
+
+		@content;
+
+	}
+}

@@ -5,6 +5,19 @@
 	text-align: center;
 	margin-top: 25px;
 
+		@include mobile {
+			grid-column: 1 / -1;
+			grid-row: 2 / 3;
+			margin: 0 auto;
+		}
+
+
+		@include tablet {
+			grid-column: 2 / 4;
+		    grid-row: 2 / 3;
+			margin: 30px auto 0 auto;
+		}
+
 		img {
 			width: 185px;
 			height: 185px;
@@ -15,10 +28,27 @@
 		}
 }
 
-
 .profile-name {
 	grid-column: 3 / 4;
 	margin: 25px 0 0 10px;
+
+		@include mobile {
+			grid-column: 1 / -1;
+			grid-row: 3 / 4;
+			margin-top: 10px;
+			text-align: center;
+			width: 95%;
+			margin: 0 auto;
+		}
+
+		@include tablet {
+			grid-column: 2 / 4;
+			grid-row: 3 / 4;
+			margin-top: 10px;
+			text-align: center;
+			width: 95%;
+			margin: 0 auto;
+		}
 
 		h1 {
 			font-family: map-get($font-family, bold);
@@ -31,9 +61,16 @@
 			color: map-get($colors, primary);
 			font-family: map-get($font-family, thin);
 			margin-top: 5px;
+
+			@include mobile {
+				font-size: 18px;
+			}
+
+			@include tablet {
+				font-size: 18px;
+			}
 		}
 }
-
 
 .profile-info {
 	grid-column: 4 / 5;
@@ -41,9 +78,32 @@
 	margin-top: 25px;
 	width: 100%;
 
+		@include mobile {
+			grid-column: 1 / -1;
+			grid-row: 4 / 5;
+			width: 90%;
+			margin: 20px auto;
+		}
+
+		@include tablet {
+			grid-column: 4 / 6;
+		    grid-row: 2 / 4;
+			width: 90%;
+			margin: 20px auto;
+			align-self: center;
+		}
+
 		&__item {
 			padding-bottom: 15px;
 			width: 255px;
+
+			@include mobile {
+				margin: 0 auto;
+			}
+
+			@include tablet {
+				margin: 0 auto;
+			}
 
 			i {
 				color: map-get($colors, secondary);
@@ -68,7 +128,6 @@
 		}
 }
 
-
 .profile-pitch {
 	grid-column: 2 / 5;
 	color: map-get($colors, primary);
@@ -76,8 +135,24 @@
 	align-self: start;
 	margin-top: 35px;
 
+		@include mobile {
+			grid-column: 1 / -1;
+			grid-row: 5 / 6;
+			margin: 0 auto 20px auto;
+			width: 90%;
+		}
+
+		@include tablet {
+			grid-column: 1 / -1;
+			grid-row: 4 / 5;
+			margin: 40px auto;
+			width: 90%;
+		}
+
 		p {
 			font-size: 18px;
 			line-height: 24px;
 		}
 }
+
+

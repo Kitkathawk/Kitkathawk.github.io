@@ -46,4 +46,59 @@ menu {
 						background-color: map-get($background-colors, graph5);
 					}
 			}
+
+			@include mobile {
+
+				menu {
+					all: unset;
+				    width: 100%;
+				    display:inline-block;
+				    grid-column: 1 / -1;
+					grid-row: 12 / 13;
+					background: map-get($background-colors, article-header);
+
+						ul {
+							width: 272px;
+					    	margin: 10px auto;
+						}
+
+						&__item {
+						
+							display: inline-block;
+							border-radius: 50%;
+							margin: 5px;
+						}
+					}
+
+			}
+
+			@include tablet {
+
+				menu {
+					all: unset;
+				    width: 100%;
+				    display:inline-block;
+				    grid-column: 1 / -1;
+					grid-row: 9 / 10;
+					background: map-get($background-colors, article-header);
+
+						ul {
+					    	width: 275px;
+    						margin: 10px 40px 10px;
+						}
+
+						&__item {
+						
+							display: inline-block;
+							border-radius: 50%;
+							margin: 5px;
+						}
+					}
+
+			}
 }
+
+
+
+	
+
