@@ -5,18 +5,17 @@
 	text-align: center;
 	margin-top: 25px;
 
-		@include mobile {
-			grid-column: 1 / -1;
-			grid-row: 2 / 3;
-			margin: 0 auto;
-		}
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 2 / 3;
+		margin: 0 auto;
+	}
 
-
-		@include tablet {
-			grid-column: 2 / 4;
-		    grid-row: 2 / 3;
-			margin: 30px auto 0 auto;
-		}
+	@include tablet {
+		grid-column: 2 / 4;
+	    grid-row: 2 / 3;
+		margin: 30px auto 0 auto;
+	}
 
 		img {
 			width: 185px;
@@ -32,28 +31,32 @@
 	grid-column: 3 / 4;
 	margin: 25px 0 0 10px;
 
-		@include mobile {
-			grid-column: 1 / -1;
-			grid-row: 3 / 4;
-			margin-top: 10px;
-			text-align: center;
-			width: 95%;
-			margin: 0 auto;
-		}
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 3 / 4;
+		margin-top: 10px;
+		text-align: center;
+		width: 95%;
+		margin: 0 auto;
+	}
 
-		@include tablet {
-			grid-column: 2 / 4;
-			grid-row: 3 / 4;
-			margin-top: 10px;
-			text-align: center;
-			width: 95%;
-			margin: 0 auto;
-		}
+	@include tablet {
+		grid-column: 2 / 4;
+		grid-row: 3 / 4;
+		margin-top: 10px;
+		text-align: center;
+		width: 95%;
+		margin: 0 auto;
+	}
 
 		h1 {
 			font-family: map-get($font-family, bold);
 			font-size: 35px;
 			color: map-get($colors, secondary);
+
+			@media only screen and (max-width: 320px) {
+				font-size: 30px;
+			}
 		}
 
 		h3 {
@@ -69,6 +72,10 @@
 			@include tablet {
 				font-size: 18px;
 			}
+
+			@media only screen and (max-width: 320px) {
+				font-size: 17px;
+			}
 		}
 }
 
@@ -78,20 +85,27 @@
 	margin-top: 25px;
 	width: 100%;
 
-		@include mobile {
-			grid-column: 1 / -1;
-			grid-row: 4 / 5;
-			width: 90%;
-			margin: 20px auto;
-		}
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 4 / 5;
+		width: 90%;
+		margin: 20px auto;
+	}
 
-		@include tablet {
-			grid-column: 4 / 6;
-		    grid-row: 2 / 4;
-			width: 90%;
-			margin: 20px auto;
-			align-self: center;
-		}
+	@include tablet {
+		grid-column: 4 / 6;
+	    grid-row: 2 / 4;
+		width: 90%;
+		margin: 20px auto;
+		align-self: center;
+	}
+
+	@media only screen and (max-width: 320px) {
+		margin: 10px auto;
+		position: relative;
+    	top: -10px;
+    	width: 220px;
+	}
 
 		&__item {
 			padding-bottom: 15px;
@@ -109,16 +123,28 @@
 				color: map-get($colors, secondary);
 				font-size: 20px;
 				margin-right: 10px;
+
+				@media only screen and (max-width: 320px) {
+					font-size: 16px;
+				}
 			}
 
 			p {
 				font-size: 16px;
 				display: inline;
 				color: map-get($colors, primary);
+
+				@media only screen and (max-width: 320px) {
+					font-size: 14px;
+				}
 			}
 
 			a {
 				font-size: 16px;
+
+				@media only screen and (max-width: 320px) {
+					font-size: 14px;
+				}
 			}
 
 			.fa-map-marker-alt {
@@ -135,24 +161,22 @@
 	align-self: start;
 	margin-top: 35px;
 
-		@include mobile {
-			grid-column: 1 / -1;
-			grid-row: 5 / 6;
-			margin: 0 auto 20px auto;
-			width: 90%;
-		}
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 5 / 6;
+		margin: 0 auto 20px auto;
+		width: 90%;
+	}
 
-		@include tablet {
-			grid-column: 1 / -1;
-			grid-row: 4 / 5;
-			margin: 40px auto;
-			width: 90%;
-		}
+	@include tablet {
+		grid-column: 1 / -1;
+		grid-row: 4 / 5;
+		margin: 40px auto;
+		width: 90%;
+	}
 
 		p {
 			font-size: 18px;
 			line-height: 24px;
 		}
 }
-
-

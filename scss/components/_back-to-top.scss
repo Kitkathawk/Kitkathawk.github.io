@@ -3,5 +3,57 @@
 #back-to-top {
 
 	display: none;
+
+	@include mobile {
+		background: map-get($background-colors, header);
+		grid-column: 1 / -1;
+		grid-row: 13 / 14;
+		display: block;
+		cursor: pointer;
+		width: 100%;
+		position: relative;
+	    top: -28px;
+	}
+
+	@include tablet {
+		background: map-get($background-colors, header);
+		grid-column: 5 / 6;
+		grid-row: 9 / 10;
+		display: block;
+		cursor: pointer;
+	    width: 35px;
+	    height: 35px;
+		border-radius: 50%;
+		padding: 10px;
+		justify-self: end;
+		margin: 15px 5px 0 0;
+	}
+
+	@media only screen and (max-width: 320px) {
+		top: -34px;
+    	height: 55px;
+	}
 	
+}
+
+.arrow-container {
+	width: 26px;
+	margin: 10px auto;
+
+	@include tablet {
+		text-align: center;
+	}
+
+	.fa-arrow-up {
+		color: map-get($colors, secondary);
+		font-size: 30px;
+
+		@include tablet {
+			font-size: 35px;
+		}
+
+		@media only screen and (max-width: 320px) {
+			line-height: 35px;
+		}
+	}
 }

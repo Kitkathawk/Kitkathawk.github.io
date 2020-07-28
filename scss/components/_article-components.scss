@@ -32,7 +32,19 @@
 			h4 {
 
 				color: map-get($colors, secondary);
-				margin: 5px 15px 5px;	
+				margin: 5px 15px 5px;
+
+				@include mobile {
+					width: 95%;
+				}
+
+				@include tablet {
+					width: 90%;
+				}
+
+				@media only screen and (max-width: 320px) {
+					width: 93%;
+				}
 
 			}
 
@@ -44,13 +56,25 @@
 				
 				color: map-get($colors, highlight);
 				margin: -3px 15px 5px;
+
+				@include mobile {
+					width: 95%;
+				}	
+
+				@include tablet {
+					width: 95%;
+				}
+
+				@media only screen and (max-width: 320px) {
+					width: 93%;	
+				}
 			}
 
 			#smaller-text {
 
 				font-size: 16px;
-
 			}
+		
 		}
 
 		&__description {
@@ -62,6 +86,14 @@
 				font-size: 16px;
 				margin: 15px;
     			width: 95%;
+
+    			@include mobile {
+					width: 90%;
+				}
+
+				@include tablet {
+					width: 90%;
+				}
 
 			}	
 		}

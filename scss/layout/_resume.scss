@@ -6,6 +6,19 @@
 	color: map-get($colors, secondary);
 	margin-top: 20px;
 
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 7 / 8;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	@include tablet {
+	    grid-row: 6 / 7;
+		width: 100%;
+		margin: 15px auto 0 auto;
+	}
+
 		.content {
 			margin-bottom: 20px;
 
@@ -14,7 +27,6 @@
 				}
 		}
 }
-
 
 
 /* EXPERIENCE */
@@ -27,19 +39,48 @@
 	align-self: start;
 	margin-bottom: 30px;
 
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 10 / 11;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	@include tablet {
+		grid-column: 2 / 6;
+		grid-row: 8 / 9;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 		.entry {
 			padding: 5px 0;
 		}
 
 		hr {
 			border: 5px solid map-get($background-colors, container);
+
+			@include mobile {
+				border: 4px solid map-get($background-colors, container);
+			}
+
+			@include tablet {
+				border: 4px solid map-get($background-colors, container);
+			}
+
+			@media only screen and (min-width: 2560px) {
+    			border: 8px solid map-get($background-colors, container);
+			}
 		}
 
 		.last {
 			margin-bottom: 4px;
+
+			@media only screen and (min-width: 1920px) {
+	    		margin-bottom: 9px;
+			}
 		}
 }
-
 
 
 /* PROGRAMMING SKILLS */
@@ -52,19 +93,61 @@
 	background-color: map-get($background-colors, article);
 	margin-top: 20px;
 
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 8 / 9;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	@include tablet {
+		grid-column: 4 / 6;
+	    grid-row: 6 / 7;
+		width: 100%;
+		margin: 15px auto 0 auto;
+	}
+
 		.content {
 			width: 70%;
     		margin: 33px auto 45px auto;
 
+    		@include mobile {
+    			width: 80%;
+			}
+
+			@include tablet {
+    			margin: 50px auto 74px auto;
+			}
+
+			@media only screen and (min-width: 800px) {
+				margin: 43px auto 60px auto;
+			}
+
+			@media only screen and (min-width: 900px) {
+				margin: 40px auto 60px auto;
+			}
+
+			@media only screen and (min-width: 1024px) {
+				margin: 35px auto 43px auto;
+			}
+
     			.bar-graph {
     				height: 30px;
 					margin: 15px 0;
+
+					@media only screen and (min-width: 568px) {
+						height: 35px;
+					}
 
 						p {
 							font-family: map-get($font-family, thin);
 							font-size: 14px;
 							color: map-get($colors, label);
 							margin-bottom: 5px;
+
+							@media only screen and (min-width: 568px) {
+								height: 35px;
+							}
 						}
 
 					&__outline {
@@ -77,6 +160,10 @@
     							line-height: 30px;
     							margin-left: -10px;
     							color: map-get($colors, secondary);
+
+    							@media only screen and (min-width: 568px) {
+    								line-height: 35px;
+    							}
 							}
 
 					}
@@ -111,7 +198,6 @@
 }
 
 
-
 /* GRAPHIC SKILLS */
 
 .graphic-skills {
@@ -121,76 +207,20 @@
 	color: map-get($colors, secondary);
 	align-self: start;
 
-		.graphic-apps {
-			width: 100%;
-   			margin: 20px auto;
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 9 / 10;
+		width: 90%;
+		margin: 0 auto;
+	}
 
-   				&__label {
-   					width: 140px;
-    				margin: 0 auto 5px auto;
-   				}
-
-   				&__box {
-   					width: 15px;
-					height: 15px;
-					display: inline-block;
-					vertical-align: middle;
-					margin-right: 5px;
-
-						&--photoshop {
-							background-color: map-get($background-colors, graph1);
-						}
-
-						&--illustrator {
-							background-color: map-get($background-colors, graph2);
-						}
-
-						&--xd {
-							background-color: map-get($background-colors, graph3);
-						}
-
-						&--premiere {
-							background-color: map-get($background-colors, graph4);
-						}
-
-						&--ae {
-							background-color: map-get($background-colors, graph5);
-						}
-   				}
-
-   				&__text {
-   					display: inline-block;
-					width: 115px;
-
-						p {
-							font-family: map-get($font-family, thin);
-							font-size: 13px;
-							color: map-get($colors, label);
-						}
-   				}
-		}
-
-		.pie-chart {
-			width: 180px;
-			height: 180px;
-			border-radius: 50%;
-			position: relative;
-			margin: 30px auto;
-			background-image: conic-gradient(#b29c30 35%, #c14733 0 50%, #56afa8 0 75%, #1b7f7c 0 87.5%, #22af4d 0);
-
-				&__center {
-					width: 120px;
-					height: 120px;
-					border-radius: 50%;
-					background-color: map-get($background-colors, article);
-					position: absolute;
-					top: 30px;
-				    left: 30px;
-					z-index: 5;	
-				}
-		}
-}
-
+	@include tablet {
+		grid-column: 2 / 4;
+	    grid-row: 7 / 8;
+		width: 100%;
+		margin: 0 auto;
+	}
+}	
 
 
 /* LANGUAGE SKILLS */
@@ -202,12 +232,55 @@
 	color: map-get($colors, secondary);
 	margin-bottom: 30px;
 
+	@include mobile {
+		grid-column: 1 / -1;
+		grid-row: 11 / 12;
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	@include tablet {
+		grid-column: 4 / 6;
+		width: 100%;
+		margin: 0 auto;
+	}
+
 		.content {
 			margin: 20px 0 24px 0;
+
+			@include mobile {
+				width: 100%;
+			}
+
+			@include tablet {
+				margin: 75px auto 80px auto;
+				width: 100%;
+			}
+
+			@media only screen and (min-width: map-get($breakpoints, desktop)) and (max-width: 1308px) {
+				margin: 40px 0 42px 0;
+			}
+
+			@media only screen and (min-width: 1309px) and (max-width: 1342px) {
+				margin: 30px 0 32px 0;
+			}
+
+			@media only screen and (min-width: 1920px) {
+				margin: 15px 0 15px 0;
+			}
 
 				.lang {
 					margin: 10px auto;
     				width: 230px;
+
+    				@media only screen and (min-width: 568px) {
+    					width: 290px;
+    				}
+
+    				@include tablet {
+    					margin: 15px auto;
+    					width: 255px;
+    				}
 
 						&__code {
 							width: 25px;
@@ -224,6 +297,10 @@
 						&__evaluation {
 							display: inline;
 							vertical-align: middle;
+
+							@include tablet {
+								margin: 5px auto;
+							}
 						}
 
 						&__circle {
@@ -232,6 +309,17 @@
 							border-radius: 50%;
 							background-color: map-get($background-colors, body);
 							display: inline-block;
+
+							@media only screen and (min-width: 568px) {
+								width: 45px;
+					    		height: 45px;
+					    		margin: 0 1px;
+							}
+
+							@include tablet {
+								width: 40px;
+								height: 40px;
+							}
 						
 								&--por {
 									background-color: map-get($background-colors, graph1);

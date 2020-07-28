@@ -6,8 +6,41 @@ menu {
     left: 25px;
     top: -130px;
 
+    @include mobile {
+    	all: unset;
+	    width: 100%;
+	    display:inline-block;
+	    grid-column: 1 / -1;
+		grid-row: 12 / 13;
+		background: map-get($background-colors, article-header);
+    }
+
+    @include tablet {
+    	all: unset;
+	    width: 100%;
+	    display:inline-block;
+	    grid-column: 1 / -1;
+		grid-row: 9 / 10;
+		background: map-get($background-colors, article-header);
+    }
+
     	ul {
 			list-style: none;
+
+			@include mobile {
+				width: 272px;
+				margin: 10px auto;
+			}
+
+			@media only screen and (min-width: 568px) {
+				width: 344px;
+			}
+
+			@include tablet {
+				width: 275px;
+    			margin: 10px 40px 10px;
+			}
+
 		}
 
 		&__item {
@@ -20,6 +53,25 @@ menu {
 				overflow: hidden;
 				cursor: pointer;
 
+				@include mobile {
+					display: inline-block;
+					border-radius: 50%;
+					margin: 5px;
+				}
+
+				@media only screen and (min-width: 568px) {
+					width: 45px;
+	   				height: 45px;
+	   				padding: 12px;
+	   				margin: 7px;
+				}
+
+				@include tablet {
+					display: inline-block;
+					border-radius: 50%;
+					margin: 5px;
+				}
+
 					a {
 						color: map-get($colors, secondary);
 						display: block;
@@ -28,6 +80,11 @@ menu {
 					i {
 						font-size: 35px;
 						color: map-get($colors, secondary);
+
+						@media only screen and (min-width: 568px) {
+							font-size: 40px;
+    						line-height: 45px;
+						}
 					}
 
 					&:nth-child(1) {
@@ -45,60 +102,14 @@ menu {
 					&:nth-child(4) {
 						background-color: map-get($background-colors, graph5);
 					}
-			}
 
-			@include mobile {
-
-				menu {
-					all: unset;
-				    width: 100%;
-				    display:inline-block;
-				    grid-column: 1 / -1;
-					grid-row: 12 / 13;
-					background: map-get($background-colors, article-header);
-
-						ul {
-							width: 272px;
-					    	margin: 10px auto;
-						}
-
-						&__item {
-						
-							display: inline-block;
-							border-radius: 50%;
-							margin: 5px;
+					&:hover {
+						@include desktop {
+							filter: brightness(110%);
+							width: 40px;
 						}
 					}
-
 			}
 
-			@include tablet {
-
-				menu {
-					all: unset;
-				    width: 100%;
-				    display:inline-block;
-				    grid-column: 1 / -1;
-					grid-row: 9 / 10;
-					background: map-get($background-colors, article-header);
-
-						ul {
-					    	width: 275px;
-    						margin: 10px 40px 10px;
-						}
-
-						&__item {
-						
-							display: inline-block;
-							border-radius: 50%;
-							margin: 5px;
-						}
-					}
-
-			}
 }
-
-
-
-	
 

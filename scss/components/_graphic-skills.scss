@@ -1,0 +1,68 @@
+.graphic-apps {
+	width: 100%;
+	margin: 20px auto;
+
+		&__label {
+			width: 140px;
+			margin: 0 auto 5px auto;
+		}
+
+		&__box {
+			width: 15px;
+			height: 15px;
+			display: inline-block;
+			vertical-align: middle;
+			margin-right: 5px;
+
+				&--photoshop {
+					background-color: map-get($background-colors, graph1);
+				}
+
+				&--illustrator {
+					background-color: map-get($background-colors, graph2);
+				}
+
+				&--xd {
+					background-color: map-get($background-colors, graph3);
+				}
+
+				&--premiere {
+					background-color: map-get($background-colors, graph4);
+				}
+
+				&--ae {
+					background-color: map-get($background-colors, graph5);
+				}
+		}
+
+		&__text {
+			display: inline-block;
+			width: 115px;
+
+				p {
+					font-family: map-get($font-family, thin);
+					font-size: 13px;
+					color: map-get($colors, label);
+				}
+		}
+}
+
+.pie-chart {
+	width: 180px;
+	height: 180px;
+	border-radius: 50%;
+	position: relative;
+	margin: 30px auto;
+	background-image: conic-gradient(#b29c30 35%, #c14733 0 50%, #56afa8 0 75%, #1b7f7c 0 87.5%, #22af4d 0);
+
+		&__center {
+			width: 120px;
+			height: 120px;
+			border-radius: 50%;
+			background-color: map-get($background-colors, article);
+			position: absolute;
+			top: 30px;
+		    left: 30px;
+			z-index: 5;	
+		}
+}
