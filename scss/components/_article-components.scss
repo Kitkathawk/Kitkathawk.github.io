@@ -55,6 +55,7 @@
 			p {
 				
 				color: map-get($colors, highlight);
+				font-family: map-get($font-family, bold);
 				margin: -3px 15px 5px;
 
 				@include mobile {

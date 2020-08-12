@@ -6015,6 +6015,7 @@ a {
 }
 .entry__text p {
   color: #048ba8;
+  font-family: "Robotobold";
   margin: -3px 15px 5px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -6432,6 +6433,7 @@ a {
 /* EDUCATION */
 .education {
   grid-column: 2/4;
+  grid-row: 6/7;
   background-color: #222626;
   color: #ffffff;
   margin-top: 20px;
@@ -6461,7 +6463,7 @@ a {
 /* EXPERIENCE */
 .experience {
   grid-column: 2/4;
-  grid-row: 6/8;
+  grid-row: 7/9;
   background-color: #222626;
   color: #ffffff;
   align-self: start;
@@ -6516,7 +6518,7 @@ a {
 /* PROGRAMMING SKILLS */
 .programming-skills {
   grid-column: 4/5;
-  grid-row: 5/6;
+  grid-row: 6/7;
   align-self: start;
   color: #ffffff;
   background-color: #222626;
@@ -6569,7 +6571,8 @@ a {
 }
 .programming-skills .content .bar-graph {
   height: 30px;
-  margin: 15px 0;
+  margin: 15px auto;
+  width: 80%;
 }
 @media only screen and (min-width: 568px) {
   .programming-skills .content .bar-graph {
@@ -6627,7 +6630,7 @@ a {
 /* GRAPHIC SKILLS */
 .graphic-skills {
   grid-column: 4/5;
-  grid-row: 6/7;
+  grid-row: 7/8;
   background-color: #222626;
   color: #ffffff;
   align-self: start;
@@ -6652,7 +6655,7 @@ a {
 /* LANGUAGE SKILLS */
 .languages {
   grid-column: 4/5;
-  grid-row: 7/8;
+  grid-row: 8/9;
   background-color: #222626;
   color: #ffffff;
   margin-bottom: 30px;
@@ -6668,6 +6671,7 @@ a {
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .languages {
     grid-column: 4/6;
+    grid-row: 7/8;
     width: 100%;
     margin: 0 auto;
   }
