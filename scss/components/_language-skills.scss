@@ -41,7 +41,7 @@
 			background-color: map-get($background-colors, body);
 			display: inline-block;
 
-			@media only screen and (min-width: 568px) {
+			@media only screen and (min-width: 568px) and (max-width: map-get($breakpoints, tablet) - 1) {
 				width: 45px;
 	    		height: 45px;
 	    		margin: 0 1px;
