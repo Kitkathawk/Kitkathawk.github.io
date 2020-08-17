@@ -1,0 +1,66 @@
+/* PROGRAMMING SKILLS COMPONENTS */
+
+.bar-graph {
+	margin: 15px auto;
+	width: 80%;
+
+	@media only screen and (min-width: map-get($breakpoints, tablet)) and (max-width: 899px) {
+		margin: 25px auto;		
+		width: 90%;
+	}
+
+	@media only screen and (min-width: 900px) and (max-width: map-get($breakpoints, desktop) - 1) {
+		margin: 15px auto;		
+		width: 90%;
+	}
+
+		p {
+			font-family: map-get($font-family, thin);
+			font-size: 14px;
+			color: map-get($colors, label);
+			margin-bottom: 5px;
+		}
+
+	&__outline {
+		background-color: map-get($background-colors, body);
+		width: 100%;
+
+			p {
+				font-family: map-get($font-family, regular) !important;
+				text-align: right;
+				line-height: 30px;
+				margin-left: -10px;
+				color: map-get($colors, label);
+
+				@media only screen and (min-width: 568px) and (max-width: map-get($breakpoints, tablet) - 1) {
+					line-height: 35px;
+				}
+		}
+	}
+
+	&--html {
+		background-color: map-get($background-colors, graph1);
+		width: 90%;
+	}
+
+	&--css {
+		background-color: map-get($background-colors, graph2);
+		width: 80%;
+	}
+
+	&--js {
+		background-color: map-get($background-colors, graph3);
+		width: 50%;
+	}
+
+	&--sql {
+		background-color: map-get($background-colors, graph4);
+		width: 70%;
+	}
+
+	&--php {
+		background-color: map-get($background-colors, graph5);
+		width: 40%;
+	}
+
+}

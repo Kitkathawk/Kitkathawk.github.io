@@ -117,85 +117,21 @@
 			}
 
 			@include tablet {
-    			margin: 50px auto 74px auto;
+    			margin: 50px auto 76px auto;
 			}
 
 			@media only screen and (min-width: 800px) {
-				margin: 43px auto 60px auto;
+				margin: 43px auto 62px auto;
 			}
 
 			@media only screen and (min-width: 900px) {
-				margin: 40px auto 60px auto;
+				margin: 40px auto 61px auto;
 			}
 
 			@media only screen and (min-width: 1024px) {
-				margin: 35px auto 43px auto;
+				margin: 35px auto 45px auto;
 			}
-
-    			.bar-graph {
-    				height: 30px;
-					margin: 15px auto;
-					width: 80%;
-
-					@media only screen and (min-width: 568px) {
-						height: 35px;
-					}
-
-						p {
-							font-family: map-get($font-family, thin);
-							font-size: 14px;
-							color: map-get($colors, label);
-							margin-bottom: 5px;
-
-							@media only screen and (min-width: 568px) {
-								height: 35px;
-							}
-						}
-
-					&__outline {
-						background-color: map-get($background-colors, body);
-						width: 100%;
-
-							p {
-								font-family: map-get($font-family, regular) !important;
-								text-align: right;
-    							line-height: 30px;
-    							margin-left: -10px;
-    							color: map-get($colors, secondary);
-
-    							@media only screen and (min-width: 568px) {
-    								line-height: 35px;
-    							}
-							}
-
-					}
-
-					&--html {
-						background-color: map-get($background-colors, graph1);
-						width: 90%;
-					}
-
-					&--css {
-						background-color: map-get($background-colors, graph2);
-						width: 80%;
-					}
-
-					&--js {
-						background-color: map-get($background-colors, graph3);
-						width: 50%;
-					}
-
-					&--sql {
-						background-color: map-get($background-colors, graph4);
-						width: 70%;
-					}
-
-					&--php {
-						background-color: map-get($background-colors, graph5);
-						width: 40%;
-					}
-
-				}	
+	
 		}
 }
 
@@ -272,74 +208,5 @@
 				margin: 15px 0 15px 0;
 			}
 
-				.lang {
-					margin: 10px auto;
-    				width: 230px;
-
-    				@media only screen and (min-width: 568px) {
-    					width: 290px;
-    				}
-
-    				@include tablet {
-    					margin: 15px auto;
-    					width: 255px;
-    				}
-
-						&__code {
-							width: 25px;
-						    display: inline-block;
-						    margin: 0 10px 0 0;
-
-						    	p {
-						    		font-family: 'Robotothin';
-									font-size: 14px;
-									color: #cccccc;
-						    	}
-						}
-
-						&__evaluation {
-							display: inline;
-							vertical-align: middle;
-
-							@include tablet {
-								margin: 5px auto;
-							}
-						}
-
-						&__circle {
-							width: 35px;
-							height: 35px;
-							border-radius: 50%;
-							background-color: map-get($background-colors, body);
-							display: inline-block;
-
-							@media only screen and (min-width: 568px) {
-								width: 45px;
-					    		height: 45px;
-					    		margin: 0 1px;
-							}
-
-							@include tablet {
-								width: 40px;
-								height: 40px;
-							}
-						
-								&--por {
-									background-color: map-get($background-colors, graph1);
-								}
-
-								&--eng {
-									background-color: map-get($background-colors, graph2);
-								}
-
-								&--fra {
-									background-color: map-get($background-colors, graph3);
-								}
-
-								&--spa {
-									background-color: map-get($background-colors, graph4);
-								}
-						}
-				}
 		}
 }

@@ -1,0 +1,72 @@
+/* LANGUAGE SKILLS COMPONENTS*/
+
+.lang {
+	margin: 10px auto;
+	width: 230px;
+
+	@media only screen and (min-width: 568px) {
+		width: 290px;
+	}
+
+	@include tablet {
+		margin: 15px auto;
+		width: 255px;
+	}
+
+		&__code {
+			width: 25px;
+		    display: inline-block;
+		    margin: 0 10px 0 0;
+
+		    	p {
+		    		font-family: 'Robotothin';
+					font-size: 14px;
+					color: #cccccc;
+		    	}
+		}
+
+		&__evaluation {
+			display: inline;
+			vertical-align: middle;
+
+			@include tablet {
+				margin: 5px auto;
+			}
+		}
+
+		&__circle {
+			width: 35px;
+			height: 35px;
+			border-radius: 50%;
+			background-color: map-get($background-colors, body);
+			display: inline-block;
+
+			@media only screen and (min-width: 568px) {
+				width: 45px;
+	    		height: 45px;
+	    		margin: 0 1px;
+			}
+
+			@include tablet {
+				width: 40px;
+				height: 40px;
+				margin: 0 auto;
+			}
+		
+				&--por {
+					background-color: map-get($background-colors, graph1);
+				}
+
+				&--eng {
+					background-color: map-get($background-colors, graph2);
+				}
+
+				&--fra {
+					background-color: map-get($background-colors, graph3);
+				}
+
+				&--spa {
+					background-color: map-get($background-colors, graph4);
+				}
+		}
+}

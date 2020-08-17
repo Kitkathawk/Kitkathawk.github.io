@@ -42,6 +42,8 @@
 
 	@include tablet {
 		text-align: center;
+		margin: 0;
+    	width: auto;
 	}
 
 	.fa-arrow-up {
