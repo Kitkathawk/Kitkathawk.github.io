@@ -2,7 +2,7 @@
 
 .education {
 	grid-column: 2 / 4;
-	grid-row: 6 / 7;
+	grid-row: 5 / 6;
 	background-color: map-get($background-colors, article);
 	color: map-get($colors, secondary);
 	margin-top: 20px;
@@ -34,7 +34,7 @@
 
 .experience {
 	grid-column: 2 / 4;
-	grid-row: 7 / 9;
+	grid-row: 6 / 8;
 	background-color: map-get($background-colors, article);
 	color: map-get($colors, secondary);
 	align-self: start;
@@ -88,7 +88,7 @@
 
 .programming-skills {
 	grid-column: 4 / 5;
-	grid-row: 6 / 7;
+	grid-row: 5 / 6;
 	align-self: start;
 	color: map-get($colors, secondary);
 	background-color: map-get($background-colors, article);
@@ -140,7 +140,7 @@
 
 .graphic-skills {
 	grid-column: 4 / 5;
-	grid-row: 7 / 8;
+	grid-row: 6 / 7;
 	background-color: map-get($background-colors, article);
 	color: map-get($colors, secondary);
 	align-self: start;
@@ -165,7 +165,7 @@
 
 .languages {
 	grid-column: 4 / 5;
-	grid-row: 8 / 9;
+	grid-row: 7 / 8;
 	background-color: map-get($background-colors, article);
 	color: map-get($colors, secondary);
 	margin-bottom: 30px;
