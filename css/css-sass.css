@@ -6344,6 +6344,8 @@ a {
   color: #ffffff;
   padding: 15px 0;
   align-self: start;
+  display: grid;
+  grid-template: 0.1fr/25px 55px 150px 1fr 165px 25px;
 }
 .spacer i {
   font-size: 40px;
@@ -6352,8 +6354,22 @@ a {
 .spacer h2 {
   font-family: "Robotobold";
   font-size: 30px;
-  display: inline;
-  vertical-align: text-bottom;
+  align-self: self-end;
+  grid-column: 3/4;
+}
+.spacer h3 {
+  font-family: "Robotothin";
+  font-size: 30px;
+  align-self: self-end;
+  font-style: italic;
+  grid-column: 5/6;
+  cursor: pointer;
+}
+.spacer h3:hover {
+  background: -webkit-linear-gradient(-45deg, yellow, pink);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: gradient 15s ease infinite;
 }
 .spacer--profile {
   grid-row: 1/2;
@@ -6379,6 +6395,7 @@ a {
   grid-column: 2/3;
   text-align: center;
   margin-top: 25px;
+  cursor: pointer;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .profile-pic {

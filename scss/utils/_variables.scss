@@ -60,3 +60,11 @@ $breakpoints: (
 
 	}
 }
+
+@mixin gradient {
+	background: -webkit-linear-gradient(-45deg, yellow, pink);
+  	-webkit-background-clip: text;
+  	-webkit-text-fill-color: transparent;
+  	animation: gradient 15s ease infinite;
+}
+

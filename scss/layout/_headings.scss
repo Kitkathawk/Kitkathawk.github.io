@@ -6,6 +6,8 @@
 	color: map-get($colors, secondary);
 	padding: 15px 0;
 	align-self: start;
+	display: grid; 
+	grid-template: 0.1fr/25px 55px 150px 1fr 165px 25px;
 
 		i {
 			font-size: 40px;
@@ -13,10 +15,24 @@
 		}
 
 		h2 {
-			font-family: map-get($font-family, bold);
-			font-size: 30px;
-			display: inline;
-			vertical-align: text-bottom;
+			font-family: "Robotobold";
+		    font-size: 30px;
+		    align-self: self-end;
+		    grid-column: 3 / 4;
+
+		}
+
+		h3 {
+		    font-family: "Robotothin";
+		    font-size: 30px;
+		    align-self: self-end;
+		    font-style: italic;
+		    grid-column: 5 / 6;
+		    cursor: pointer;
+
+		    &:hover {
+		    	@include gradient;
+		    }
 		}
 
 		&--profile {
