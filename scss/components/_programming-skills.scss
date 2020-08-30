@@ -3,6 +3,7 @@
 .bar-graph {
 	margin: 15px auto;
 	width: 100%;
+	transition: all 1s ease;
 
 	@media only screen and (min-width: map-get($breakpoints, tablet)) and (max-width: 899px) {
 		margin: 25px auto;		
@@ -19,6 +20,8 @@
 			font-size: 14px;
 			color: map-get($colors, label);
 			margin-bottom: 5px;
+
+			@include fade-in-percentage;
 		}
 
 	&__outline {
@@ -40,27 +43,37 @@
 
 	&--html {
 		background-color: map-get($background-colors, graph1);
-		width: 90%;
+		width: map-get($programming-skills, html);
+
+		@include percentage-bars(html);
 	}
 
 	&--css {
 		background-color: map-get($background-colors, graph2);
-		width: 80%;
+		width: map-get($programming-skills, css);
+
+		@include percentage-bars(css);
 	}
 
 	&--js {
 		background-color: map-get($background-colors, graph3);
-		width: 50%;
+		width: map-get($programming-skills, js);
+
+		@include percentage-bars(js);
 	}
 
 	&--sql {
 		background-color: map-get($background-colors, graph4);
-		width: 70%;
+		width: map-get($programming-skills, sql);
+
+		@include percentage-bars(sql);
 	}
 
 	&--php {
 		background-color: map-get($background-colors, graph5);
-		width: 40%;
+		width: map-get($programming-skills, php);
+
+		@include percentage-bars(php);
 	}
 
 }

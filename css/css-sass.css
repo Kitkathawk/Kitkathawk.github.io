@@ -6064,6 +6064,7 @@ a {
 .bar-graph {
   margin: 15px auto;
   width: 100%;
+  transition: all 1s ease;
 }
 @media only screen and (min-width: 768px) and (max-width: 899px) {
   .bar-graph {
@@ -6082,6 +6083,15 @@ a {
   font-size: 14px;
   color: #cccccc;
   margin-bottom: 5px;
+  animation: percentage 2s ease forwards;
+}
+@keyframes percentage {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }
 .bar-graph__outline {
   background-color: #1a1e1e;
@@ -6102,22 +6112,67 @@ a {
 .bar-graph--html {
   background-color: #1b7f7c;
   width: 90%;
+  animation: bars 2s forwards;
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
 }
 .bar-graph--css {
   background-color: #56af98;
   width: 80%;
+  animation: bars 2s forwards;
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80%;
+  }
 }
 .bar-graph--js {
   background-color: #22af4d;
   width: 50%;
+  animation: bars 2s forwards;
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
 }
 .bar-graph--sql {
   background-color: #b29c30;
   width: 70%;
+  animation: bars 2s forwards;
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
 }
 .bar-graph--php {
   background-color: #c14733;
   width: 40%;
+  animation: bars 2s forwards;
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40%;
+  }
 }
 
 /* GRAPHIC SKILLS COMPONENTS*/
@@ -6167,7 +6222,11 @@ a {
   border-radius: 50%;
   position: relative;
   margin: 30px auto;
-  background-image: conic-gradient(#b29c30 35%, #c14733 0 50%, #56afa8 0 75%, #1b7f7c 0 87.5%, #22af4d 0);
+  background-image: conic-gradient(#b29c30 35%, #c14733 0 50%, #56af98 0 75%, #1b7f7c 0 87.5%, #22af4d 0);
+  transition: all 1s ease-in-out;
+}
+.pie-chart:hover {
+  transform: rotate(360deg);
 }
 .pie-chart__center {
   width: 120px;
@@ -6180,7 +6239,7 @@ a {
   z-index: 5;
 }
 
-/* LANGUAGE SKILLS COMPONENTS*/
+/* LANGUAGE SKILLS COMPONENTS */
 .lang {
   margin: 10px auto;
   width: 230px;
@@ -6813,7 +6872,7 @@ a {
   position: relative;
   width: 70px;
   left: 15px;
-  top: -130px;
+  top: -125px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu {
@@ -6857,13 +6916,8 @@ a {
 }
 .menu__item {
   width: 35px;
-  height: 35px;
-  margin-left: -20px;
-  border: 5px solid #2b3030;
-  border-radius: 50%;
   text-align: center;
   padding: 10px;
-  -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
   overflow: hidden;
   cursor: pointer;
@@ -6888,6 +6942,14 @@ a {
     display: inline-block;
     border-radius: 50%;
     margin: 5px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .menu__item {
+    height: 35px;
+    margin-left: -20px;
+    border: 5px solid #2b3030;
+    border-radius: 50%;
   }
 }
 .menu__item a {

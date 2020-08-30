@@ -55,7 +55,12 @@
 	border-radius: 50%;
 	position: relative;
 	margin: 30px auto;
-	background-image: conic-gradient(#b29c30 35%, #c14733 0 50%, #56afa8 0 75%, #1b7f7c 0 87.5%, #22af4d 0);
+	background-image: conic-gradient(map-get($background-colors, graph4) 35%, map-get($background-colors, graph5) 0 50%, map-get($background-colors, graph2) 0 75%, map-get($background-colors, graph1) 0 87.5%, map-get($background-colors, graph3) 0);
+	transition: all 1s ease-in-out;
+
+		&:hover {
+			transform: rotate(360deg);
+		}
 
 		&__center {
 			width: 120px;
