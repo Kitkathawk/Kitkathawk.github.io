@@ -5,7 +5,9 @@ $colors: (
 	secondary: #ffffff,
 	highlight: #048ba8,
 	label: #cccccc,
-	link: #3fa9f5
+	link: #3fa9f5,
+	link-hover: #66ccff,
+	glow: #00fff2
 );
 
 $background-colors: (
@@ -61,10 +63,17 @@ $breakpoints: (
 	}
 }
 
-@mixin gradient {
-	background: -webkit-linear-gradient(-45deg, yellow, pink);
-  	-webkit-background-clip: text;
-  	-webkit-text-fill-color: transparent;
-  	animation: gradient 15s ease infinite;
+@mixin glow {
+	color: map-get($colors, secondary);
+    text-shadow: 0 0 0 map-get($colors, glow), 
+		 		 0 0 10px map-get($colors, glow), 
+		 		 0 0 20px map-get($colors, glow), 
+		 		 0 0 30px map-get($colors, glow), 
+				 0 0 40px map-get($colors, glow), 
+				 0 0 50px map-get($colors, glow), 
+				 0 0 60px map-get($colors, glow), 
+				 0 0 70px map-get($colors, glow);
 }
+
+
 

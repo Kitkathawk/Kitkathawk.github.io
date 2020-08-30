@@ -3,7 +3,7 @@
 .menu {
 	position: relative;
     width: 70px;
-    left: 25px;
+    left: 15px;
     top: -130px;
 
     @include mobile {
@@ -45,11 +45,14 @@
 
 		&__item {
 				width: 35px;
-				margin-bottom: 10px;
-				padding: 10px;
+				height: 35px;
+				margin-left: -20px;
+				border: 5px solid map-get($background-colors, container);
+				border-radius: 50%;
 				text-align: center;
-				-webkit-transition: all 0.2s ease;
-				transition: all 0.2s ease;
+				padding: 10px;
+				-webkit-transition: all 0.5s ease;
+				transition: all 0.5s ease;
 				overflow: hidden;
 				cursor: pointer;
 
@@ -105,8 +108,8 @@
 
 					&:hover {
 						@include desktop {
-							filter: brightness(110%);
-							width: 40px;
+							filter: brightness(115%);
+							transform: translateX(15%);
 						}
 					}
 			}

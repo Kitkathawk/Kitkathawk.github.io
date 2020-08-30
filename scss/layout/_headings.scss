@@ -29,9 +29,10 @@
 		    font-style: italic;
 		    grid-column: 5 / 6;
 		    cursor: pointer;
+		    transition: all 1s ease-in-out;
 
 		    &:hover {
-		    	@include gradient;
+		    	@include glow;
 		    }
 		}
 

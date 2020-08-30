@@ -142,6 +142,11 @@
 
 			a {
 				font-size: 16px;
+				transition: all 1.5s ease-in-out;
+
+				&:hover {
+					color: map-get($colors, link-hover);
+				}
 
 				@media only screen and (max-width: 320px) {
 					font-size: 14px;
@@ -160,7 +165,7 @@
 	color: map-get($colors, primary);
 	font-family: map-get($font-family, thin);
 	align-self: start;
-	margin-top: 35px;
+	margin-top: 45px;
 
 	@include mobile {
 		grid-column: 1 / -1;

@@ -8,3 +8,8 @@ a {
 	color: map-get($colors, link);
 	text-decoration: none;
 }
+
+::selection {
+	color: map-get($background-colors, body);
+	background-color: map-get($colors, secondary);
+}

@@ -5955,6 +5955,11 @@ a {
   text-decoration: none;
 }
 
+::selection {
+  color: #1a1e1e;
+  background-color: #ffffff;
+}
+
 /* TYPOGRAPHY */
 @font-face {
   font-family: "Roboto";
@@ -6364,12 +6369,11 @@ a {
   font-style: italic;
   grid-column: 5/6;
   cursor: pointer;
+  transition: all 1s ease-in-out;
 }
 .spacer h3:hover {
-  background: -webkit-linear-gradient(-45deg, yellow, pink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: gradient 15s ease infinite;
+  color: #ffffff;
+  text-shadow: 0 0 0 #00fff2, 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2;
 }
 .spacer--profile {
   grid-row: 1/2;
@@ -6543,6 +6547,10 @@ a {
 }
 .profile-info__item a {
   font-size: 16px;
+  transition: all 1.5s ease-in-out;
+}
+.profile-info__item a:hover {
+  color: #66ccff;
 }
 @media only screen and (max-width: 320px) {
   .profile-info__item a {
@@ -6558,7 +6566,7 @@ a {
   color: #c2c4c4;
   font-family: "Robotothin";
   align-self: start;
-  margin-top: 35px;
+  margin-top: 45px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .profile-pitch {
@@ -6804,7 +6812,7 @@ a {
 .menu {
   position: relative;
   width: 70px;
-  left: 25px;
+  left: 15px;
   top: -130px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -6849,11 +6857,14 @@ a {
 }
 .menu__item {
   width: 35px;
-  margin-bottom: 10px;
-  padding: 10px;
+  height: 35px;
+  margin-left: -20px;
+  border: 5px solid #2b3030;
+  border-radius: 50%;
   text-align: center;
-  -webkit-transition: all 0.2s ease;
-  transition: all 0.2s ease;
+  padding: 10px;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
   overflow: hidden;
   cursor: pointer;
 }
@@ -6907,8 +6918,8 @@ a {
 }
 @media screen and (min-width: 1200px) {
   .menu__item:hover {
-    filter: brightness(110%);
-    width: 40px;
+    filter: brightness(115%);
+    transform: translateX(15%);
   }
 }
 
