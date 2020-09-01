@@ -56,6 +56,11 @@
 
 		.entry {
 			padding: 5px 0;
+			transition: all 0.5s ease-in-out;
+
+			&:hover {
+				background-color: map-get($background-colors, article-hover);
+			}
 		}
 
 		hr {
@@ -75,10 +80,14 @@
 		}
 
 		.last {
-			margin-bottom: 4px;
+			border-bottom: 4px solid map-get($background-colors, article);
+
+			&:hover {
+				border-bottom: 4px solid map-get($background-colors, article-hover);
+			}
 
 			@media only screen and (min-width: 1920px) {
-	    		margin-bottom: 9px;
+	    		border-bottom: 9px solid map-get($background-colors, article-hover);;
 			}
 		}
 }

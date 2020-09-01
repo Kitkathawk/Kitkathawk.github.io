@@ -1,0 +1,4 @@
+.portfolio-container {
+	display: grid;
+	grid-template: 1fr / 25px repeat(3, 1fr) 25px;
+}

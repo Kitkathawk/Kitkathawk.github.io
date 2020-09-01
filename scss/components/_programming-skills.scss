@@ -45,35 +45,35 @@
 		background-color: map-get($background-colors, graph1);
 		width: map-get($programming-skills, html);
 
-		@include percentage-bars(html);
+		@include percentage-bars;
 	}
 
 	&--css {
 		background-color: map-get($background-colors, graph2);
 		width: map-get($programming-skills, css);
 
-		@include percentage-bars(css);
+		@include percentage-bars;
 	}
 
 	&--js {
 		background-color: map-get($background-colors, graph3);
 		width: map-get($programming-skills, js);
 
-		@include percentage-bars(js);
+		@include percentage-bars;
 	}
 
 	&--sql {
 		background-color: map-get($background-colors, graph4);
 		width: map-get($programming-skills, sql);
 
-		@include percentage-bars(sql);
+		@include percentage-bars;
 	}
 
 	&--php {
 		background-color: map-get($background-colors, graph5);
 		width: map-get($programming-skills, php);
 
-		@include percentage-bars(php);
+		@include percentage-bars;
 	}
 
 }

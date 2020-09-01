@@ -9,6 +9,10 @@
 	display: grid; 
 	grid-template: 0.1fr/25px 55px 150px 1fr 165px 25px;
 
+	@include mobile {
+		grid-template: 0.1fr/25px 55px 1fr 40px 30px;
+	}
+
 		i {
 			font-size: 40px;
 			margin: 0 20px 0 25px;
@@ -19,20 +23,35 @@
 		    font-size: 30px;
 		    align-self: self-end;
 		    grid-column: 3 / 4;
-
 		}
 
-		h3 {
+		.portfolio {
 		    font-family: "Robotothin";
 		    font-size: 30px;
+		    color: map-get($colors, secondary);
 		    align-self: self-end;
 		    font-style: italic;
 		    grid-column: 5 / 6;
 		    cursor: pointer;
 		    transition: all 1s ease-in-out;
 
+		    @include mobile {
+		    	display: none;
+			}
+
 		    &:hover {
 		    	@include glow;
+		    }
+		}
+
+		.fa-ellipsis-v {
+		    display: none;
+
+		    @include mobile {
+		    	display:block;
+		    	grid-column: 4 / 5;
+		    	cursor: pointer;
+
 		    }
 		}
 

@@ -15,6 +15,7 @@ $background-colors: (
 	container: #2b3030,
 	header: #048ba8,
 	article: #222626,
+	article-hover: #1D2020,
 	article-header: #111111,
 	graph1: #1b7f7c,
 	graph2: #56af98,
@@ -83,12 +84,14 @@ $programming-skills: (
 				 0 0 70px map-get($colors, glow);
 }
 
-@mixin percentage-bars($skill) {
-	animation: bars 2s forwards;
+@mixin percentage-bars {
+	@each $key, $value in $programming-skills {
+		animation: bars 2s forwards;
 
-	@keyframes bars {
-		0% {width: 0};
-		100% {width: map-get($programming-skills, #{$skill})};
+		@keyframes bars {
+			0% {width: 0};
+			100% {width: #{$value[i]}};
+		}
 	}
 }
 

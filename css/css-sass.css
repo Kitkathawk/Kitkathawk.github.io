@@ -6113,57 +6113,156 @@ a {
   background-color: #1b7f7c;
   width: 90%;
   animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
 }
 @keyframes bars {
   0% {
     width: 0;
   }
   100% {
-    width: 90%;
+    width: 90% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40% [i];
   }
 }
 .bar-graph--css {
   background-color: #56af98;
   width: 80%;
   animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
 }
 @keyframes bars {
   0% {
     width: 0;
   }
   100% {
-    width: 80%;
+    width: 90% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40% [i];
   }
 }
 .bar-graph--js {
   background-color: #22af4d;
   width: 50%;
   animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
 }
 @keyframes bars {
   0% {
     width: 0;
   }
   100% {
-    width: 50%;
+    width: 90% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40% [i];
   }
 }
 .bar-graph--sql {
   background-color: #b29c30;
   width: 70%;
   animation: bars 2s forwards;
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70%;
-  }
-}
-.bar-graph--php {
-  background-color: #c14733;
-  width: 40%;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
   animation: bars 2s forwards;
 }
 @keyframes bars {
@@ -6171,7 +6270,88 @@ a {
     width: 0;
   }
   100% {
-    width: 40%;
+    width: 90% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40% [i];
+  }
+}
+.bar-graph--php {
+  background-color: #c14733;
+  width: 40%;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+  animation: bars 2s forwards;
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 80% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70% [i];
+  }
+}
+@keyframes bars {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 40% [i];
   }
 }
 
@@ -6243,6 +6423,10 @@ a {
 .lang {
   margin: 10px auto;
   width: 230px;
+  transition: all 0.5s ease-in-out;
+}
+.lang:hover {
+  transform: scale(1.1);
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   .lang {
@@ -6411,6 +6595,11 @@ a {
   display: grid;
   grid-template: 0.1fr/25px 55px 150px 1fr 165px 25px;
 }
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .spacer {
+    grid-template: 0.1fr/25px 55px 1fr 40px 30px;
+  }
+}
 .spacer i {
   font-size: 40px;
   margin: 0 20px 0 25px;
@@ -6421,18 +6610,34 @@ a {
   align-self: self-end;
   grid-column: 3/4;
 }
-.spacer h3 {
+.spacer .portfolio {
   font-family: "Robotothin";
   font-size: 30px;
+  color: #ffffff;
   align-self: self-end;
   font-style: italic;
   grid-column: 5/6;
   cursor: pointer;
   transition: all 1s ease-in-out;
 }
-.spacer h3:hover {
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .spacer .portfolio {
+    display: none;
+  }
+}
+.spacer .portfolio:hover {
   color: #ffffff;
   text-shadow: 0 0 0 #00fff2, 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2;
+}
+.spacer .fa-ellipsis-v {
+  display: none;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .spacer .fa-ellipsis-v {
+    display: block;
+    grid-column: 4/5;
+    cursor: pointer;
+  }
 }
 .spacer--profile {
   grid-row: 1/2;
@@ -6606,7 +6811,7 @@ a {
 }
 .profile-info__item a {
   font-size: 16px;
-  transition: all 1.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 .profile-info__item a:hover {
   color: #66ccff;
@@ -6705,6 +6910,10 @@ a {
 }
 .experience .entry {
   padding: 5px 0;
+  transition: all 0.5s ease-in-out;
+}
+.experience .entry:hover {
+  background-color: #1D2020;
 }
 .experience hr {
   border: 5px solid #2b3030;
@@ -6725,11 +6934,14 @@ a {
   }
 }
 .experience .last {
-  margin-bottom: 4px;
+  border-bottom: 4px solid #222626;
+}
+.experience .last:hover {
+  border-bottom: 4px solid #1D2020;
 }
 @media only screen and (min-width: 1920px) {
   .experience .last {
-    margin-bottom: 9px;
+    border-bottom: 9px solid #1D2020;
   }
 }
 
@@ -6983,6 +7195,15 @@ a {
     filter: brightness(115%);
     transform: translateX(15%);
   }
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template: 1fr/25px repeat(3, 1fr) 25px;
 }
 
 /*# sourceMappingURL=css-sass.css.map */
