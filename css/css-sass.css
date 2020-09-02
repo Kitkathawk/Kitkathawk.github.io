@@ -7202,8 +7202,103 @@ a {
 }
 
 .portfolio-container {
+  width: 80%;
+  margin: 70px auto;
   display: grid;
-  grid-template: 1fr/25px repeat(3, 1fr) 25px;
+  grid-template: 0.1fr/25px repeat(3, 1fr) 25px;
+  grid-gap: 25px;
+  grid-auto-rows: 0.1fr;
+  background-color: #2b3030;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-container {
+    width: 100%;
+    margin: 0 auto;
+    grid-template: 0.1fr/25px 1fr 25px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-container {
+    width: 100%;
+    margin: 0 auto;
+    grid-template: 0.1fr/25px 1fr 1fr 25px;
+  }
+}
+.portfolio-container .spacer h1 {
+  font-size: 30px;
+  color: #ffffff;
+  font-family: "Robotothin";
+  font-style: italic;
+  grid-column: 5/6;
+}
+.portfolio-container .spacer .fa-angle-left {
+  color: #ffffff;
+}
+.portfolio-container .work {
+  width: 1fr;
+  margin: 20px 0 50px 0;
+  transition: all 0.5s ease;
+  cursor: pointer;
+  box-shadow: 5px 5px 25px #111111;
+}
+.portfolio-container .work:hover {
+  transform: scale(1.02);
+}
+.portfolio-container .work--1 {
+  grid-column: 2/3;
+}
+.portfolio-container .work--2 {
+  grid-column: 3/4;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-container .work--2 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+.portfolio-container .work--3 {
+  grid-column: 4/5;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-container .work--3 {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-container .work--3 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
+}
+.portfolio-container .work__title {
+  background-color: #111111;
+  color: #ffffff;
+  height: 50px;
+}
+.portfolio-container .work__title h2 {
+  font-size: 22px;
+  padding: 10px 0;
+  font-family: "Roboto";
+  margin-left: 15px;
+}
+.portfolio-container .work__img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: all 0.5s ease;
+}
+.portfolio-container .work__img:hover {
+  opacity: 0.5;
+}
+.portfolio-container .work__description {
+  display: none;
+  line-height: 20px;
+  font-family: "Robotothin";
+  color: #c2c4c4;
+  font-size: 14px;
+  margin: 10px auto;
+  width: 90%;
 }
 
 /*# sourceMappingURL=css-sass.css.map */

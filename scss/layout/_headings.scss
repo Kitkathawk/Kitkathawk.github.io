@@ -19,14 +19,14 @@
 		}
 
 		h2 {
-			font-family: "Robotobold";
+			font-family: map-get($font-family, bold);
 		    font-size: 30px;
 		    align-self: self-end;
 		    grid-column: 3 / 4;
 		}
 
 		.portfolio {
-		    font-family: "Robotothin";
+		    font-family: map-get($font-family, thin);
 		    font-size: 30px;
 		    color: map-get($colors, secondary);
 		    align-self: self-end;
