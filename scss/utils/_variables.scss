@@ -37,16 +37,10 @@ $breakpoints: (
 	desktop: 1200px
 );
 
-$programming-skills: (
-	html: 90%,
-	css: 80%,
-	js: 50%,
-	sql: 70%,
-	php: 40%
-);
-
 
 //MIXINS
+
+//FOR SCREEN SIZES
 
 @mixin mobile {
 	@media screen and (min-width: map-get($breakpoints, mobile)) and (max-width: map-get($breakpoints, tablet) - 1) {
@@ -72,6 +66,8 @@ $programming-skills: (
 	}
 }
 
+//FOR ANIMATIONS
+
 @mixin glow {
 	color: map-get($colors, secondary);
     text-shadow: 0 0 0 map-get($colors, glow), 
@@ -82,26 +78,6 @@ $programming-skills: (
 				 0 0 50px map-get($colors, glow), 
 				 0 0 60px map-get($colors, glow), 
 				 0 0 70px map-get($colors, glow);
-}
-
-@mixin percentage-bars {
-	@each $key, $value in $programming-skills {
-		animation: bars 2s forwards;
-
-		@keyframes bars {
-			0% {width: 0};
-			100% {width: #{$value[i]}};
-		}
-	}
-}
-
-@mixin fade-in-percentage {
-	animation: percentage 2s ease forwards;
-
-	@keyframes percentage {
-		0% {opacity: 0};
-		100% {opacity: 1};
-	}
 }
 
 

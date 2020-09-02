@@ -6064,7 +6064,6 @@ a {
 .bar-graph {
   margin: 15px auto;
   width: 100%;
-  transition: all 1s ease;
 }
 @media only screen and (min-width: 768px) and (max-width: 899px) {
   .bar-graph {
@@ -6083,19 +6082,11 @@ a {
   font-size: 14px;
   color: #cccccc;
   margin-bottom: 5px;
-  animation: percentage 2s ease forwards;
-}
-@keyframes percentage {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 .bar-graph__outline {
   background-color: #1a1e1e;
   width: 100%;
+  height: 30px;
 }
 .bar-graph__outline p {
   font-family: "Roboto" !important;
@@ -6103,6 +6094,7 @@ a {
   line-height: 30px;
   margin-left: -10px;
   color: #cccccc;
+  transition: all 1s ease;
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   .bar-graph__outline p {
@@ -6111,248 +6103,28 @@ a {
 }
 .bar-graph--html {
   background-color: #1b7f7c;
-  width: 90%;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 40% [i];
-  }
+  width: 15%;
+  height: 30px;
 }
 .bar-graph--css {
   background-color: #56af98;
-  width: 80%;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 40% [i];
-  }
+  width: 15%;
+  height: 30px;
 }
 .bar-graph--js {
   background-color: #22af4d;
-  width: 50%;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 40% [i];
-  }
+  width: 15%;
+  height: 30px;
 }
 .bar-graph--sql {
   background-color: #b29c30;
-  width: 70%;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 40% [i];
-  }
+  width: 15%;
+  height: 30px;
 }
 .bar-graph--php {
   background-color: #c14733;
-  width: 40%;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-  animation: bars 2s forwards;
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 90% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 80% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 50% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 70% [i];
-  }
-}
-@keyframes bars {
-  0% {
-    width: 0;
-  }
-  100% {
-    width: 40% [i];
-  }
+  width: 15%;
+  height: 30px;
 }
 
 /* GRAPHIC SKILLS COMPONENTS*/
@@ -6664,6 +6436,7 @@ a {
   text-align: center;
   margin-top: 25px;
   cursor: pointer;
+  transition: margin 700ms;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .profile-pic {
@@ -6941,7 +6714,7 @@ a {
 }
 @media only screen and (min-width: 1920px) {
   .experience .last {
-    border-bottom: 9px solid #1D2020;
+    border-bottom: 9px solid #222626;
   }
 }
 
@@ -7065,12 +6838,12 @@ a {
 }
 @media only screen and (min-width: 1200px) and (max-width: 1308px) {
   .languages .content {
-    margin: 40px 0 42px 0;
+    margin: 40px 0 43px 0;
   }
 }
 @media only screen and (min-width: 1309px) and (max-width: 1342px) {
   .languages .content {
-    margin: 30px 0 32px 0;
+    margin: 30px 0 34px 0;
   }
 }
 @media only screen and (min-width: 1920px) {
@@ -7199,6 +6972,18 @@ a {
 
 .mobile-menu {
   display: none;
+  background-color: #1a1e1e;
+  color: #ffffff;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 25px;
+  grid-column: 1/-1;
+  grid-row: 2/3;
+  margin-top: -46px;
+}
+.mobile-menu li {
+  font-family: "Robotothin";
+  font-style: italic;
 }
 
 .portfolio-container {

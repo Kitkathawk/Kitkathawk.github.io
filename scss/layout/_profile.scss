@@ -5,6 +5,7 @@
 	text-align: center;
 	margin-top: 25px;
 	cursor: pointer;
+	transition: margin 700ms;
 
 	@include mobile {
 		grid-column: 1 / -1;
