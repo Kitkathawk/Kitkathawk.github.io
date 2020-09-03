@@ -5,12 +5,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta name="description" content="Resume of a Junior Web Developer passionate about Frontend.">
-	<link rel="stylesheet" type="text/css" href="css/all.css">
-	<link rel="stylesheet" type="text/css" href="css/fonts.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-width:767px) and (min-width:320px)" href="css/style-mobile.css">
-	<link rel="stylesheet" type="text/css" media="screen and (max-width:1199px) and (min-width:768px)" href="css/style-tablet.css">
-	<link rel="stylesheet" type="text/css" media="screen and (min-width:1200px)" href="css/style-desktop.css">	
+	<link rel="stylesheet" type="text/css" href="css/css-sass.css">
 </head>
 <body>
 
@@ -20,44 +15,62 @@
 
 	<!-- PROFILE -->
 
-		<header class="spacer">
+		<header class="spacer spacer--profile">
 			<i class="fas fa-user"></i>
 			<h2>PROFILE</h2>
+			<a class="portfolio" href="portfolio.html"><h3 class="portfolio">PORTFOLIO</h3></a>
+			<i class="fas fa-ellipsis-v"></i>
 		</header>
 
-		<figure id="profile-pic">
+		<!-- MOBILE MENU -->
+
+		<nav class="mobile-menu">
+			<ul>
+				<a href="portfolio.html"><li>PORTFOLIO</li></a>
+			</ul>
+		</nav>
+
+		<!-- PROFILE PIC -->
+
+		<figure class="profile-pic">
 			<img src="img/fotoresume.jpg" alt="Photo of Susana Vale Lopes">
 		</figure>
 
-		<section id="profile-name">
+		<!-- PROFILE NAME -->
+
+		<section class="profile-name">
 			<h1>Susana Vale Lopes</h1>
 			<h3>Junior Web Developer</h3>
 		</section>
 
-		<section id="profile-info">
-			<div class="info-item">
+		<!-- PROFILE INFO -->
+
+		<section class="profile-info">
+			<div class="profile-info__item">
 				<i class="fas fa-birthday-cake"></i>
 				<p>23/10/85</p><br>
 			</div>
-			<div class="info-item">
+			<div class="profile-info__item">
 				<i class="fas fa-map-marker-alt"></i>
 				<p>Lisbon, Portugal</p><br>
 			</div>
-			<div class="info-item">
+			<div class="profile-info__item">
 				<i class="fas fa-at"></i>
 				<a href="mailto:susana.vale.lopes@gmail.com">susana.vale.lopes@gmail.com</a><br>
 			</div>
-			<div class="info-item">
+			<div class="profile-info__item">
 				<i class="fab fa-github"></i>
 				<a href="https://github.com/Kitkathawk" target="_blank">https://github.com/Kitkathawk</a>
 			</div>
-			<div class="info-item">
+			<div class="profile-info__item">
 				<i class="fab fa-codepen"></i>
 				<a href="https://codepen.io/susielee" target="_blank">https://codepen.io/susielee</a>
 			</div>
 		</section>
 
-		<section id="profile-pitch">
+		<!-- PROFILE PITCH -->
+
+		<section class="profile-pitch">
 			<p>The crave to create has always been a part of who I am ever since I can remember. From still to moving images. From pen and paper to computer screen. From sewing and cross-stitching to the many personal blogs, I spent endless hours customizing to my liking.</p><br>
 			<p>When the time came, though, to make a choice between image and mind, I ended up choosing the latter and became a psychologist. Years past and a growing need for change has gotten me back to what I’m passionate about – creating.</p><br>
 			<p>Because of it I am here today choosing to become a <strong>frontend developer</strong>.</p>
@@ -66,29 +79,29 @@
 
 	<!-- SIDE MENU -->
 
-			<nav>
+			<nav class="menu">
 				<ul>
-					<li class="menu-item">
+					<li class="menu__item">
 						<a href="mailto:susana.vale.lopes@gmail.com">
 							<i class="far fa-envelope"></i>
 						</a>
 					</li>
 
-					<li class="menu-item">
+					<li class="menu__item">
 						<a href="https://www.linkedin.com/in/susana-vale-lopes/" target="_blank">
 							<i class="fab fa-linkedin"></i>
 						</a>
 					</li>
 
-					<li class="menu-item">
+					<li class="menu__item">
 						<a href="">
 							<i class="fas fa-print"></i>
 						</a>
 					</li>
 
-					<li class="menu-item">
-						<a href="docs/Resume__SusanaValeLopes.pdf" download>
-							<i class="far fa-arrow-alt-circle-down"></i>
+					<li class="menu__item">
+						<a href="docs/Resume__SusanaValeLopes.pdf"  download>
+							<i class="fas fa-arrow-down"></i>
 						</a>
 					</li>
 				</ul>
@@ -97,7 +110,7 @@
 
 	<!-- RESUME -->
 
-		<header class="spacer resume">
+		<header class="spacer spacer--resume">
 			<i class="fas fa-bars"></i>
 			<h2>RESUME</h2>
 		</header>
@@ -112,47 +125,47 @@
 
 			<section class="content">
 				<section class="entry">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2019 ></p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Web Developer Path</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>OpenClassrooms, sponsored by BNP Paribas</p>
 						<p id="smaller-text">Digital, Data and Agile Academy</p>
 					</div>
 				</section>
 				<section class="entry">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2018 > 2019</p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Web Design</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>Lisbon School of Design</p>
 					</div>
 				</section>
 				<section class="entry">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2014 > 2015</p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Film Directing</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>Restart - Creativity, Arts and New Technology Institute</p>
 					</div>
 				</section>
 				<section class="entry">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2003 > 2009</p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Master’s Degree in Clinical Psychology</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>Faculty of Psychology - University of Lisbon</p>
 					</div>
 				</section>					
@@ -169,16 +182,16 @@
 
 			<section class="content">
 				<section class="entry">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2017 ></p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Account Manager | Listed Derivatives Brokerage Mgmt</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>BNP Paribas Securities Services</p>
 					</div>
-					<div class="entry-description">
+					<div class="entry__description">
 						<p>Handling of client’s brokerage billing concerning derivatives · Invoice log and reconciliation · Investigation of breaks · Invoice payment.</p>
 					</div>
 				</section>
@@ -186,16 +199,16 @@
 				<hr>
 
 				<section class="entry">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2015 > 2016</p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Customer Service Representative</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>TNT</p>
 					</div>
-					<div class="entry-description">
+					<div class="entry__description">
 						<p>Providing customer support to strategic customers · Pro-active identification and resolution of incidents · Maintaining customer up-to-date on shipment’s status within agreed SLA.</p>
 					</div>
 				</section>
@@ -203,16 +216,16 @@
 				<hr>
 
 				<section class="entry">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2012 > 2014</p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Sales Operator</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>BPI Bank</p>
 					</div>
-					<div class="entry-description">
+					<div class="entry__description">
 						<p>Conduction of satisfaction surveys · Promotion and sale of financial products.</p>
 					</div>
 				</section>
@@ -220,17 +233,17 @@
 				<hr>
 				
 				<section class="entry last">
-					<div class="entry-date">
+					<div class="entry__date">
 						<p>2012 > 2013</p>
 					</div>
-					<div class="entry-title">
+					<div class="entry__title">
 						<h4>Clinical Psychologist</h4>
 					</div>
-					<div class="entry-text">
+					<div class="entry__text">
 						<p>Community Service</p>
 						<p>Faculty of Psychology - University of Lisbon</p>
 					</div>
-					<div class="entry-description">
+					<div class="entry__description">
 						<p>Psychological assessment · Individual psychotherapy to children, adolescents and adults.</p>
 					</div>
 				</section>
@@ -245,44 +258,44 @@
 				<h3>PROGRAMMING SKILLS</h3>
 			</header>
 
-			<section class="content">
-				<figure class="percentage-bar">
+			<section class="content" id="anchor">
+				<figure class="bar-graph">
 					<p>HTML</p>
-					<div class="bar">
-						<div class="percentage" id="html">
-							<p class="percentage-text">90%</p>
+					<div class="bar-graph__outline">
+						<div class="bar-graph--html skill">
+							<p>90%</p>
 						</div>
 					</div>
 				</figure>
-				<figure class="percentage-bar">
+				<figure class="bar-graph">
 					<p>CSS</p>
-					<div class="bar">
-						<div id="css">
-							<p class="percentage-text">80%</p>
+					<div class="bar-graph__outline">
+						<div class="bar-graph--css">
+							<p>80%</p>
 						</div>
 					</div>
 				</figure>
-				<figure class="percentage-bar">
+				<figure class="bar-graph">
 					<p>JavaScript</p>
-					<div class="bar">
-						<div id="js">
-							<p class="percentage-text">50%</p>
+					<div class="bar-graph__outline">
+						<div class="bar-graph--js">
+							<p>50%</p>
 						</div>
 					</div>
 				</figure>
-				<figure class="percentage-bar">
+				<figure class="bar-graph">
 					<p>MySQL</p>
-					<div class="bar">
-						<div id="sql">
-							<p class="percentage-text">70%</p>
+					<div class="bar-graph__outline">
+						<div class="bar-graph--sql">
+							<p>70%</p>
 						</div>
 					</div>
 				</figure>
-				<figure class="percentage-bar">
+				<figure class="bar-graph">
 					<p>PHP</p>
-					<div class="bar">
-						<div id="php">
-							<p class="percentage-text">40%</p>
+					<div class="bar-graph__outline">
+						<div class="bar-graph--php">
+							<p>40%</p>
 						</div>
 					</div>
 				</figure>
@@ -299,40 +312,40 @@
 
 			<section class="content">	
 				<section class="graphic-apps">
-					<div class="app-label">
-						<figure class="app-box" id="photoshop"></figure>
-						<div class="app-text">
+					<div class="graphic-apps__label">
+						<figure class="graphic-apps__box graphic-apps__box--photoshop"></figure>
+						<div class="graphic-apps__text">
 							<p>Adobe Photoshop</p>
 						</div>
 					</div>
-					<div class="app-label">
-						<figure class="app-box" id="illustrator"></figure>
-						<div class="app-text">
+					<div class="graphic-apps__label">
+						<figure class="graphic-apps__box graphic-apps__box--illustrator"></figure>
+						<div class="graphic-apps__text">
 							<p>Adobe Illustrator</p>
 						</div>
 					</div>
-					<div class="app-label">
-						<figure class="app-box" id="xd"></figure>
-						<div class="app-text">
+					<div class="graphic-apps__label">
+						<figure class="graphic-apps__box graphic-apps__box--xd"></figure>
+						<div class="graphic-apps__text">
 							<p>Adobe XD</p>
 						</div>
 					</div>
-					<div class="app-label">
-						<figure class="app-box" id="premiere"></figure>
-						<div class="app-text">
+					<div class="graphic-apps__label">
+						<figure class="graphic-apps__box graphic-apps__box--premiere"></figure>
+						<div class="graphic-apps__text">
 							<p>Adobe Premiere</p>
 						</div>
 					</div>
-					<div class="app-label">
-						<figure class="app-box" id="ae"></figure>
-						<div class="app-text">
+					<div class="graphic-apps__label">
+						<figure class="graphic-apps__box graphic-apps__box--ae"></figure>
+						<div class="graphic-apps__text">
 							<p>Adobe After Effects</p>
 						</div>
 					</div>
 				</section>
 				
 				<figure class="pie-chart">
-					<div class="pie-center"></div>
+					<div class="pie-chart__center"></div>
 				</figure>
 			</section>
 		</article>
@@ -347,51 +360,51 @@
 
 			<section class="content">
 				<section class="lang">
-					<div class="lang-code">
+					<div class="lang__code">
 						<p>POR</p>
 					</div>
-					<figure class="evaluation">
-						<div class="circle por"></div>
-						<div class="circle por"></div>
-						<div class="circle por"></div>
-						<div class="circle por"></div>
-						<div class="circle por"></div>
+					<figure class="lang__evaluation">
+						<div class="lang__circle lang__circle--por"></div>
+						<div class="lang__circle lang__circle--por"></div>
+						<div class="lang__circle lang__circle--por"></div>
+						<div class="lang__circle lang__circle--por"></div>
+						<div class="lang__circle lang__circle--por"></div>
 					</figure>
 				</section>
 				<section class="lang">
-					<div class="lang-code">
+					<div class="lang__code">
 						<p>ENG</p>
 					</div>
-					<figure class="evaluation">
-						<div class="circle eng"></div>
-						<div class="circle eng"></div>
-						<div class="circle eng"></div>
-						<div class="circle eng"></div>
-						<div class="circle"></div>
+					<figure class="lang__evaluation">
+						<div class="lang__circle lang__circle--eng"></div>
+						<div class="lang__circle lang__circle--eng"></div>
+						<div class="lang__circle lang__circle--eng"></div>
+						<div class="lang__circle lang__circle--eng"></div>
+						<div class="lang__circle"></div>
 					</figure>
 				</section>
 				<section class="lang">
-					<div class="lang-code">
+					<div class="lang__code">
 						<p>FRA</p>
 					</div>
-					<figure class="evaluation">
-						<div class="circle fra"></div>
-						<div class="circle fra"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
+					<figure class="lang__evaluation">
+						<div class="lang__circle lang__circle--fra"></div>
+						<div class="lang__circle lang__circle--fra"></div>
+						<div class="lang__circle"></div>
+						<div class="lang__circle"></div>
+						<div class="lang__circle"></div>
 					</figure>
 				</section>
 				<section class="lang">
-					<div class="lang-code">
+					<div class="lang__code">
 						<p>SPA</p>
 					</div>
-					<figure class="evaluation">
-						<div class="circle spa"></div>
-						<div class="circle spa"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
-						<div class="circle"></div>
+					<figure class="lang__evaluation">
+						<div class="lang__circle lang__circle--spa"></div>
+						<div class="lang__circle lang__circle--spa"></div>
+						<div class="lang__circle"></div>
+						<div class="lang__circle"></div>
+						<div class="lang__circle"></div>
 					</figure>
 				</section>
 			</section>
@@ -406,6 +419,7 @@
 		</a>
 
 	</main>
-
+	<script type="text/javascript" src="scripts/jquery.js"></script>
+	<script type="text/javascript" src="scripts/main.js"></script>
 </body>
 </html>

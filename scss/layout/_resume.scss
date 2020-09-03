@@ -65,6 +65,7 @@
 
 		hr {
 			border: 5px solid map-get($background-colors, container);
+			background-color: map-get($background-colors, container);
 
 			@include mobile {
 				border: 4px solid map-get($background-colors, container);

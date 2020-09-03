@@ -6436,7 +6436,7 @@ a {
   text-align: center;
   margin-top: 25px;
   cursor: pointer;
-  transition: margin 700ms;
+  transition: margin 600ms;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .profile-pic {
@@ -6690,6 +6690,7 @@ a {
 }
 .experience hr {
   border: 5px solid #2b3030;
+  background-color: #2b3030;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .experience hr {
@@ -6976,7 +6977,6 @@ a {
   color: #ffffff;
   padding: 15px 0;
   text-align: center;
-  font-size: 25px;
   grid-column: 1/-1;
   grid-row: 2/3;
   margin-top: -46px;
@@ -6984,29 +6984,40 @@ a {
 .mobile-menu li {
   font-family: "Robotothin";
   font-style: italic;
+  color: #ffffff;
+  font-size: 30px;
 }
 
 .portfolio-container {
-  width: 80%;
-  margin: 70px auto;
+  width: 100%;
+  margin: 0 auto 45px auto;
   display: grid;
-  grid-template: 0.1fr/25px repeat(3, 1fr) 25px;
+  grid-template: 0.1fr 300px/25px repeat(3, 1fr) 25px;
   grid-gap: 25px;
-  grid-auto-rows: 0.1fr;
-  background-color: #2b3030;
+  grid-auto-rows: 300px;
 }
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .portfolio-container {
-    width: 100%;
-    margin: 0 auto;
-    grid-template: 0.1fr/25px 1fr 25px;
+    grid-template: 0.1fr 300px/25px 1fr 25px;
   }
 }
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .portfolio-container {
-    width: 100%;
-    margin: 0 auto;
-    grid-template: 0.1fr/25px 1fr 1fr 25px;
+    grid-template: 0.1fr 300px/25px 1fr 1fr 25px;
+  }
+}
+.portfolio-container .spacer {
+  grid-template: 0.1fr/35px 55px 100px 1fr 165px 35px;
+  margin-bottom: 20px;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-container .spacer {
+    grid-template: 0.1fr/25px 55px 1fr 165px 30px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-container .spacer {
+    grid-template: 0.1fr/35px 45px 1fr 165px 35px;
   }
 }
 .portfolio-container .spacer h1 {
@@ -7015,16 +7026,40 @@ a {
   font-family: "Robotothin";
   font-style: italic;
   grid-column: 5/6;
+  align-self: center;
+  color: #ffffff;
+  text-shadow: 0 0 0 #00fff2, 0 0 10px #00fff2, 0 0 20px #00fff2, 0 0 30px #00fff2, 0 0 40px #00fff2, 0 0 50px #00fff2, 0 0 60px #00fff2, 0 0 70px #00fff2;
+}
+@media screen and (min-width: 320px) and (max-width: 767px) {
+  .portfolio-container .spacer h1 {
+    grid-column: 4/5;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-container .spacer h1 {
+    grid-column: 4/5;
+  }
+}
+.portfolio-container .spacer a {
+  transition: all 0.5s ease;
+}
+.portfolio-container .spacer a:hover {
+  transform: translateX(-15%);
 }
 .portfolio-container .spacer .fa-angle-left {
   color: #ffffff;
+  cursor: pointer;
+}
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .portfolio-container .spacer .fa-angle-left {
+    grid-column: 2/3;
+  }
 }
 .portfolio-container .work {
-  width: 1fr;
-  margin: 20px 0 50px 0;
+  width: 100%;
   transition: all 0.5s ease;
   cursor: pointer;
-  box-shadow: 5px 5px 25px #111111;
+  box-shadow: 0px 15px 25px #0a0a0a;
 }
 .portfolio-container .work:hover {
   transform: scale(1.02);
@@ -7057,7 +7092,7 @@ a {
   }
 }
 .portfolio-container .work__title {
-  background-color: #111111;
+  background-color: #0a0a0a;
   color: #ffffff;
   height: 50px;
 }
@@ -7067,23 +7102,39 @@ a {
   font-family: "Roboto";
   margin-left: 15px;
 }
-.portfolio-container .work__img {
+.portfolio-container .work__frame {
   width: 100%;
   height: 250px;
+  position: relative;
+}
+.portfolio-container .work__frame:hover img {
+  opacity: 0.4;
+}
+.portfolio-container .work__frame:hover .work__description {
+  opacity: 1;
+}
+.portfolio-container .work__img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   transition: all 0.5s ease;
 }
-.portfolio-container .work__img:hover {
-  opacity: 0.5;
-}
 .portfolio-container .work__description {
-  display: none;
+  opacity: 0;
+  width: 70%;
   line-height: 20px;
+  text-align: left;
   font-family: "Robotothin";
-  color: #c2c4c4;
-  font-size: 14px;
-  margin: 10px auto;
+  color: #ffffff;
+  font-size: 15px;
+  margin: 0 auto;
   width: 90%;
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 999;
+  top: 40%;
+  transition: all 0.5s ease;
 }
 
 /*# sourceMappingURL=css-sass.css.map */

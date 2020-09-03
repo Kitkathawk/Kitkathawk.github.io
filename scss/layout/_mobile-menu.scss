@@ -4,7 +4,6 @@
 	color: map-get($colors, secondary);
 	padding: 15px 0;
     text-align: center;
-    font-size: 25px;
     grid-column: 1 / -1;
     grid-row: 2 / 3;
     margin-top: -46px; 
@@ -12,5 +11,7 @@
     li {
     	font-family: map-get($font-family, thin);
     	font-style: italic;
+        color: map-get($colors, secondary);
+        font-size: 30px;
     }
 }

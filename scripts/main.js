@@ -4,7 +4,7 @@ $(document).ready(function(){
 
   $('.fa-ellipsis-v').on('click', function(event){
 
-  	$('.mobile-menu').toggle(500);
+  	$('.mobile-menu').toggle();
   	$('.profile-pic').toggleClass('active');
 
 	  	if ( $('.profile-pic').hasClass('active') ) {
