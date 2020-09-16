@@ -1,10 +1,19 @@
-//DROP-DOWN MENU FOR MOBILE HEADER
 
 $(document).ready(function(){
 
+//PRINT BUTTON
+
+	$('#print').on('click', function(event){
+
+			window.frames["pdf"].focus();
+			window.frames["pdf"].print();
+	});
+
+//DROP-DOWN MENU FOR MOBILE HEADER
+
   $('.fa-ellipsis-v').on('click', function(event){
 
-  	$('.mobile-menu').toggle();
+  	$('.mobile-menu').fadeToggle();
   	$('.profile-pic').toggleClass('active');
 
 	  	if ( $('.profile-pic').hasClass('active') ) {
@@ -29,6 +38,7 @@ $(document).ready(function(){
 
 		if (scrollOffset > elementOffset) {
 
+			$('.percentage').animate({opacity: 1}, 20, 'linear');
 			$('.bar-graph--html').animate({width: '90%'}, 700, 'swing');
 			$('.bar-graph--css').animate({width: '80%'}, 800, 'swing');
 			$('.bar-graph--js').animate({width: '50%'}, 900, 'swing');

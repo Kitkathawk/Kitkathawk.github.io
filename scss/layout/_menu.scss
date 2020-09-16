@@ -51,6 +51,13 @@
 				overflow: hidden;
 				cursor: pointer;
 
+					iframe {
+						visibility: hidden;
+						width: 1px;
+					    height: 1px;
+					    position: absolute;
+					}
+
 				@include mobile {
 					display: inline-block;
 					border-radius: 50%;

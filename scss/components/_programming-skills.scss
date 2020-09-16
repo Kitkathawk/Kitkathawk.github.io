@@ -33,6 +33,7 @@
 				margin-left: -10px;
 				color: map-get($colors, label);
 				transition: all 1s ease;
+				opacity: 0;
 
 				@media only screen and (min-width: 568px) and (max-width: map-get($breakpoints, tablet) - 1) {
 					line-height: 35px;
@@ -42,31 +43,31 @@
 
 	&--html {
 		background-color: map-get($background-colors, graph1);
-		width: 15%;
+		width: 0;
 		height: 30px;
 	}
 
 	&--css {
 		background-color: map-get($background-colors, graph2);
-		width: 15%;
+		width: 0;
 		height: 30px;
 	}
 
 	&--js {
 		background-color: map-get($background-colors, graph3);
-		width: 15%;
+		width: 0;
 		height: 30px;
 	}
 
 	&--sql {
 		background-color: map-get($background-colors, graph4);
-		width: 15%;
+		width: 0;
 		height: 30px;
 	}
 
 	&--php {
 		background-color: map-get($background-colors, graph5);
-		width: 15%;
+		width: 0;
 		height: 30px;
 	}
 

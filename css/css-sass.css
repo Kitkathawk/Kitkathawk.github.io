@@ -5943,6 +5943,7 @@ readers do not read off random characters that represent icons */
   padding: 0;
   width: 100%;
   font-family: "Roboto";
+  scroll-behavior: smooth;
 }
 
 /* GENERAL */
@@ -6095,6 +6096,7 @@ a {
   margin-left: -10px;
   color: #cccccc;
   transition: all 1s ease;
+  opacity: 0;
 }
 @media only screen and (min-width: 568px) and (max-width: 767px) {
   .bar-graph__outline p {
@@ -6103,27 +6105,27 @@ a {
 }
 .bar-graph--html {
   background-color: #1b7f7c;
-  width: 15%;
+  width: 0;
   height: 30px;
 }
 .bar-graph--css {
   background-color: #56af98;
-  width: 15%;
+  width: 0;
   height: 30px;
 }
 .bar-graph--js {
   background-color: #22af4d;
-  width: 15%;
+  width: 0;
   height: 30px;
 }
 .bar-graph--sql {
   background-color: #b29c30;
-  width: 15%;
+  width: 0;
   height: 30px;
 }
 .bar-graph--php {
   background-color: #c14733;
-  width: 15%;
+  width: 0;
   height: 30px;
 }
 
@@ -6413,6 +6415,7 @@ a {
 }
 .spacer--profile {
   grid-row: 1/2;
+  position: relative;
 }
 .spacer--resume {
   grid-row: 4/5;
@@ -6908,6 +6911,12 @@ a {
   overflow: hidden;
   cursor: pointer;
 }
+.menu__item iframe {
+  visibility: hidden;
+  width: 1px;
+  height: 1px;
+  position: absolute;
+}
 @media screen and (min-width: 320px) and (max-width: 767px) {
   .menu__item {
     display: inline-block;
@@ -6979,7 +6988,8 @@ a {
   text-align: center;
   grid-column: 1/-1;
   grid-row: 2/3;
-  margin-top: -46px;
+  position: absolute;
+  top: 70px;
 }
 .mobile-menu li {
   font-family: "Robotothin";
